@@ -671,6 +671,9 @@ a {
 		padding-left: 0px;
 	}
 	.resume-item-inner{
-		visibility: hidden;
+		visibility: hidden !important;
+	}
+	.custom-ag img{
+		height: 200px;
 	}
 }
