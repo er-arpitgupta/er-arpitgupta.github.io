@@ -628,25 +628,11 @@ a {
 .form-group input, textarea{
   border-radius: 50px;
 }
-.resume-item{
-  height: 230px;
-}
-.custom-ag{
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
-.custom-ag:hover{
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-.custom-ag img{
-  width: 100%;
-  height: 260px;
-}
-.custom-ag2{
-  -webkit-filter: sepia(1);
-  filter: sepia(1);
-}
+.resume-item{height: 230px;}
+.custom-ag{-webkit-filter: grayscale(1);filter: grayscale(1);}
+.custom-ag:hover{-webkit-filter: grayscale(0); filter: grayscale(0);}
+.custom-ag img{width: 100%;height: 260px;}
+.custom-ag2{-webkit-filter: sepia(1); filter: sepia(1);}
 .custom-ag2:hover{
   -webkit-filter: sepia(0);
   filter: sepia(0);
@@ -656,12 +642,8 @@ a {
   width: 100%;
   height: 260px;
 }
-.custom-ag2 img:hover{
-  border-radius: 30px;
-}
-.custom-ag .blog-entry-text{
-  height: 335px;
-}
+.custom-ag2 img:hover{border-radius: 30px;}
+.custom-ag .blog-entry-text{height: 335px;}
 #contact form input, #contact form textarea{color: white;}
 .cb1, .cb2{
 	background-color: rgb(34,34,34);
@@ -678,6 +660,3 @@ a {
 	.resume-item-inner{visibility: hidden !important;}
 	.custom-ag img{height: 200px;}
 }
-
-
-
