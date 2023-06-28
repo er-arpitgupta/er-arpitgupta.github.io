@@ -1,365 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Portfolio | Arpit Gupta</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/flexslider.css">
-		<link rel="stylesheet" href="fonts/icomoon/style.css">
 
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="icon" href="images/logo.png" type="image/icon">
-		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-	</head>
-	<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-        
-        <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
-            <div class="container">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#"><img src="images/logo.png" alt="AG" style="width: 30px; height: 30px;"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+<head>
+    <title>Arpit Gupta | Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/static/images/favicon.png" type="image/icon">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <header class="banner">
+        <a href="/" class="logo">
+            A<span class="hidden">rpit </span>G<span class="hidden">upta</span>
+        </a>
+        <input class="menu-button" type="checkbox" id="menu-button" />
+        <label class="menu-icon" for="menu-button"><span class="navicon"></span></label>
+
+        <ul class="menu">
+            <li>
+                <a href="#home">
+                    <img src="/static/images/home.svg" alt="Home">
+                    <span class="nav-name">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <img src="/static/images/about.svg" alt="About">
+                    <span class="nav-name">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    <img src="/static/images/skills.svg" alt="Skills">
+                    <span class="nav-name">Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="#work">
+                    <img src="/static/images/work.svg" alt="Work">
+                    <span class="nav-name">Work</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <img src="/static/images/contact.svg" alt="Contact">
+                    <span class="nav-name">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="outer" id="home">
+        <div class="home">
+            <div class="photo">
+                <img src="/static/images/ArpitGupta-ProfilePic.jpg" alt="my photo">
             </div>
-        </nav>
-
-		<section class="site-hero" style="background-image: url(images/img1.jpg);" data-stellar-background-ratio="0.5">
-			<div class="container">
-				<div class="row intro-text align-items-center justify-content-center">
-					<div class="col-md-10 text-center pt-5">
-						<h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Arpit Gupta</strong></h1>
-						<strong class="d-block text-white text-uppercase letter-spacing">and I'm &#10094;coder/&#10095;</strong>
-					</div>
-				</div>
-			</div>
-		</section> 
-
-		<section class="site-section" id="portfolio">
-			<div class="container">
-				<div class="row">
-					<div class="section-heading text-center col-md-12">
-						<h2>Featured <strong>Portfolio</strong></h2>
-					</div>
-				</div>
-				<div class="filters">
-					<ul>
-						<li data-filter=".photography">Photography/Editing</li>
-					</ul>
-				</div>
-
-				<div class="filters-content">
-					<div class="row grid">
-
-						<div class="single-portfolio col-sm-4 all mockup">
-							<div class="relative">
-								<div class="thumb custom-ag2">
-									<img class="image img-fluid" src="images/after1.jpg" alt="">
-								</div>
-							</div>
-							<div class="p-inner">
-								<h4>Lotus Flower Valley</h4>
-							</div>                                         
-						</div>
-						<div class="single-portfolio col-sm-4 all mockup">
-							<div class="relative">
-								<div class="thumb custom-ag2">
-									<img class="image img-fluid" src="images/after2.jpg" alt="">
-								</div>
-							</div>
-							<div class="p-inner">
-								<h4>Golden Temple in Day</h4>
-							</div>                                         
-						</div>
-
-						<div class="single-portfolio col-sm-4 all mockup">
-							<div class="relative">
-								<div class="thumb custom-ag2">
-									<img class="image img-fluid" src="images/after3.jpg" alt="">
-								</div>
-							</div>
-							<div class="p-inner">
-								<h4>Golden Temple in Night</h4>
-							</div>                                         
-						</div>
-
-						<div class="single-portfolio col-sm-4 all mockup">
-							<div class="relative">
-								<div class="thumb custom-ag2">
-									<img class="image img-fluid" src="images/after4.jpg" alt="">
-								</div>
-							</div>
-							<div class="p-inner">
-								<h4>Ancient Cameras</h4>
-							</div>                                         
-						</div>
-
-						<div class="single-portfolio col-sm-4 all mockup">
-							<div class="relative">
-								<div class="thumb custom-ag2">
-									<img class="image img-fluid" src="images/after5.jpg" alt="">
-								</div>
-							</div>
-							<div class="p-inner">
-								<h4>Martyr's memorial in Jalian Wala Bagh</h4>
-							</div>                                  
-						</div>
-
-						<div class="single-portfolio col-sm-4 all mockup">
-							<div class="relative">
-								<div class="thumb custom-ag2">
-									<img class="image img-fluid" src="images/after6.jpg" alt="">
-								</div>
-							</div>
-							<div class="p-inner">
-								<h4>Clock Tower</h4>
-							</div>                                         
-						</div>
-
-
-
-
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section class="site-section " id="resume">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 mb-5">
-						<div class="section-heading text-center">
-							<h2>My <strong>Resume</strong></h2>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<h2>Education</h2>
-						<div class="resume-item mb-4">
-							<span class="date"><span class="icon-calendar"></span>&nbsp; July 2016 - Sept 2020</span>
-							<h3>Bachelor's in Computer Science</h3>
-							<p>Graduated in B.Tech (CSE) from Shri Siddhi Vinayak Institute of Technology College in year 2020.</p>
-							<span class="school">Bareilly, Uttar Pradesh</span>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<h2>Experience</h2>
-						<div class="resume-item mb-4">
-							<span class="date"><span class="icon-calendar"></span>&nbsp; Nov 2020 - Present</span>
-							<h3>Software Developer at TCS</h3>
-							<p>Software Developer in Banking domain performing all coding tasks.</p>
-							<span class="school">Bangalore, Karnataka</span>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<h2>Skills</h2>
-						<div class="resume-item mb-4">
-							<div style="display: inline-table;">
-								<ul>
-									<li>Java</li>
-									<li>Spring Boot</li>
-									<li>Microservices</li>
-									<li>RestAPIs</li>
-									<li>MySQL/mongoDB</li>
-									<li>HTML/CSS/React.JS</li>
-								</ul>
-							</div>
-							<div class="resume-item-inner" style="display: inline-table;">
-								<ul>
-									<li>VS Code/Eclipse</li>
-									<li>Spring Tool Suite</li>
-									<li>Oracle SQL Developer</li>
-									<li>GitHub</li>
-									<li>Postman</li>
-									<li>Jira/ALM</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<h2>Hobbies</h2>
-						<div class="resume-item mb-4">
-							<ul>
-								<li>Coding</li>
-								<li>Photography</li>
-								<li>Research</li>
-								<li>Watching Movies</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-				<section class="site-section" id="section-blog">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 mb-5">
-						<div class="section-heading text-center">
-							<h2>My <strong>Projects</strong></h2>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-6 col-lg-4">
-						<div class="blog-entry custom-ag">
-							<a href="#"><img src="images/project1.jpg" alt="Project 1: My ToDo" class="img-fluid"></a>
-							<div class="blog-entry-text">
-								<span class="icon-calendar"></span> Apr, 2022<h3><a href="http://flask-todoapp-arpit.herokuapp.com/">My ToDo</a></h3>
-								<ul style="margin-left: -20px;">
-									<li>A platform to add your ToDos.</li>
-									<li>Here you can add, modify and delete you todo lists.</li>
-										<li>Future Upgrade: Adding template, login portal and export feature.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-lg-4">
-						<div class="blog-entry custom-ag">
-							<a href="#"><img src="images/project2.jpg" alt="Project 2: Library Management System" class="img-fluid"></a>
-							<div class="blog-entry-text">
-								<span class="icon-calendar"></span> Apr, 2020<h3><a href="#">Library Management System</a></h3>
-								<ul style="margin-left: -20px;">
-									<li>A platform for all students to issue and request books online.</li>
-									<li>Faculty members can add, modify, delete and track the status of the book requests.</li>
-									<li>Future Upgrade: Adding membership feature.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-lg-4">
-						<div class="blog-entry custom-ag">
-							<a href="#"><img src="images/project3.jpg" alt="Project 1: Library Management System" class="img-fluid"></a>
-							<div class="blog-entry-text">
-								<span class="icon-calendar"></span> Apr, 2022<h3><a href="#">YouTube Video Downloader</a></h3>
-								<ul style="margin-left: -20px;">
-									<li>An application to download videos from YouTube.</li>
-									<li>A person can download single video or a playlist of videos by just providing the link.</li>
-										<li>Future Upgrade: Adding template and progress bar.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-		<section class="site-section" id="about">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-						<img src="images/img2.png" alt="Image placeholder" class="img-fluid" style="border-right: 2px solid white; border-bottom: 2px solid white; border-radius: 50px;">
-					</div>
-					<div class="col-lg-5 pl-lg-5">
-						<div class="section-heading">
-							<h2>About <strong>Me</strong></h2>
-						</div>
-						<p class="lead">Technology Enthusiast | Software Developer at TCS</p>
-						<p class="mb-5  ">I perceive myself as a confident and hardworking individual. I have always been a fast learner, and I love to keep up my process of learning to figure out better ways of solving problems. Moreover, I love to compete with my own past performances rather than competing with my peers, as I believe that improvement is always better than perfection!</p>
-						<p>
-							<a href="#contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll mb-2">Contact Me</a>
-							<a href="Arpit_CV.pdf" class="btn btn-secondary px-4 py-2 btn-sm mb-2" download="download">Download CV</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="site-section" id="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 mb-5">
-						<div class="section-heading text-center">
-							<h2>Get <strong>In Touch</strong></h2>
-						</div>
-					</div>
-
-					<div class="col-md-7 mb-5 mb-md-0">
-						<form action="mailto:er.gupta.arpit@gmail.com" method="get" enctype="text/plain" class="site-form">
-							<h3 class="mb-5">Get In Touch</h3>
-							<div class="form-group">
-								<input type="text" class="form-control px-3 py-4" placeholder="Your Name">
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control px-3 py-4" placeholder="Your Email">
-							</div>
-							<div class="form-group">
-								<input type="tel" id="phone" name="phone" class="form-control px-3 py-4" pattern="+[0-9]{2}[0-9]{10}" placeholder="Your Phone">
-							</div>
-							<div class="form-group mb-5">
-								<textarea class="form-control px-3 py-4" style="border-radius: 25px;" cols="30" rows="10" placeholder="Write a Message"></textarea>
-							</div>
-							<div class="form-group">
-								<input type="submit" class="btn btn-primary px-4 py-3 cb1" name="submit" value="Send">
-								<input type="reset" class="btn btn-primary px-4 py-3 cb2" name="reset" value="Clear">
-							</div>
-						</form>
-					</div>
-					<div class="col-md-5 pl-md-5">
-						<h3 class="mb-5">My Contact Details</h3>
-						<ul class="site-contact-details">
-							<li>
-								<span class="text-uppercase">Email</span>
-								er.gupta.arpit@gmail.com
-							</li>
-							<li>
-								<span class="text-uppercase">Phone</span>
-								+91 8477017395
-							</li>
-							<li>
-								<span class="text-uppercase">Address</span>
-								Uttar Pradesh , India <br>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-        
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row mb-5">
-                    <p class="col-12 text-center">
-                        Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved
-                    </p>
+            <div class="home-content">
+                <div class="intro">
+                    <p>Hello World! I'm</p>
+                    <p>Arpit Gupta</p>
+                    <p>A versatile <span class="special">Full-Stack Developer</span> with  strong foundation in back-end
+                        and front-end technologies,
+                        adept at creating innovative and efficient web solutions that deliver exceptional user
+                        experiences.</p>
                 </div>
-                <div class="row mb-5">
-                    <div class="col-md-12 text-center">
-                        <p>
-                            <a href="#" class="social-item"><span class="icon-facebook2"></span></a>
-                            <a href="#" class="social-item"><span class="icon-twitter"></span></a>
-                            <a href="mailto:er.gupta.arpit@gmail.com" class="social-item"><span class="icon-mail"></span></a>
-                            <a href="https://www.linkedin.com/in/er-arpit-gupta/" class="social-item"><span class="icon-linkedin2"></span></a>
-                            <a href="https://github.com/er-arpitgupta" class="social-item"><span class="icon-github2"></span></a>
-                        </p>
+                <div class="buttons">
+                    <a href="ArpitResume.pdf" class="resume" download="ArpitGupta_Resume">Resume</a>
+                    <div class="links">
+                        <a href="mailto:er.gupta.arpit@gmail.com"><img src="/static/images/gmail.svg"
+                                alt="My Gmail link"></a>
+                        <a href="https://www.linkedin.com/in/er-arpit-gupta"><img src="/static/images/linkedin.svg"
+                                alt="My LinkedIn link"></a>
+                        <a href="https://github.com/er-arpitgupta"><img src="/static/images/github.svg"
+                                alt="My GitHub link"></a>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
 
-		<script src="js/vendor/jquery.min.js"></script>
-		<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/vendor/popper.min.js"></script>
-		<script src="js/vendor/bootstrap.min.js"></script>
-		<script src="js/vendor/jquery.easing.1.3.js"></script>
-		<script src="js/vendor/jquery.stellar.min.js"></script>
-		<script src="js/vendor/jquery.waypoints.min.js"></script>
+        <div class="about" id="about">
+            <p class="before-heading"> Some Info</p>
+            <p class="heading">About Me</p>
+            <div class="content">
+                <p>As a Full-Stack Developer, I possess the ability to handle all layers of a software application, from
+                    crafting visually appealing user interfaces to implementing robust server-side logic and database
+                    management. I excel in problem-solving, adapting to new technologies, and staying up-to-date with
+                    industry trends. Collaborative and effective in communication, I am a valuable team player who can
+                    transform complex requirements into innovative and user-friendly solutions. With meticulous
+                    attention to detail, I deliver clean and efficient code, ensuring the successful implementation of
+                    comprehensive web development projects.</p>
+            </div>
+        </div>
 
-		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-		<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-		<script src="js/custom.js"></script>
+        <div class="skills" id="skills">
+            <p class="before-heading"> Check out my</p>
+            <p class="heading">Skills</p>
+            <div class="content">
+                <div class="skill-set">
+                    <div class="title">
+                        <span>Skills</span>
+                    </div>
+                    <div class="skill-logos">
+                        <div class="box">
+                            <img src="/static/images/skills/java.svg" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/springio.svg" alt="Spring Boot">
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/jenkins.svg" alt="Jenkins">
+                            <span>Jenkins</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/docker.svg" alt="Docker">
+                            <span>Docker</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/kubernetes.svg" alt="Kubernetes">
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/mysql.svg" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/mongo.svg" alt="mongoDB">
+                            <span>Mongo DB</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/git.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/html5.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/css.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/javascript.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/react.svg" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/api.svg" alt="Rest API">
+                            <span>Rest API</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/python.svg" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/django.svg" alt="Django">
+                            <span>Django</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/flask.svg" alt="Flask">
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools">
+                    <div class="title">
+                        <span>Tools</span>
+                    </div>
+                    <div class="tools-logos">
+                        <div class="box">
+                            <img src="/static/images/skills/vscode.svg" alt="VS Code">
+                            <span>VS Code</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/intellij.svg" alt="IntelliJ Idea">
+                            <span>IntelliJ</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/pycharm.svg" alt="PyCharm">
+                            <span>PyCharm</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/eclipse.svg" alt="Eclipse">
+                            <span>Eclipse</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/github.svg" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/postman.svg" alt="Postman">
+                            <span>Postman</span>
+                        </div>
+                        <div class="box">
+                            <img src="/static/images/skills/sqldeveloper3.svg" alt="Oracle SQL Developer">
+                            <span>SQL Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    </body>
-    </html>
+        <div class="work" id="work">
+            <p class="before-heading"> Take a look at my</p>
+            <p class="heading">Projects</p>
+            <div class="content">
+
+                <div class="project">
+                    <img src="/static/images/project/lms.png" alt="Library Management System">
+                    <div class="project-content">
+                        <p class="project-heading">Library Management System</p>
+                        <p>Technologies: <br class="line-break"><span class="special">React, Spring Boot</span></p>
+                        <ul>
+                            <li>A platform for all the students to issue and request books online.</li>
+                            <li>Faculty members can add, modify, delete and track the status of the book requests.</li>
+                        </ul>
+                        <div>
+                            <a href="lms.html">Live</a>
+                            <a href="">Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="/static/images/project/photofolio.jpg" alt="PhotoFolio">
+                    <div class="project-content">
+                        <p class="project-heading">PhotoFolio</p>
+                        <p>Technologies: <span class="special">HTML, CSS, React</span></p>
+                        <ul>
+                            <li>A website to showcase my photography and editing skills.</li>
+                            <li>This website is the depiction of my creativity using technology.</li>
+                        </ul>
+                        <div style="display: none;">
+                            <a href="">Live</a>
+                            <a href="">Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <p class="before-heading"> Say Hello</p>
+            <p class="heading">Contact</p>
+            <div class="content">
+                <div class="form-content">
+                    <div class="form">
+                        <div class="form-heading">Get in touch</div>
+                        <form action="" method="get" enctype="text/plain">
+                            <input class="form-field" type="text" name="name" id="name" placeholder="Your Name" required
+                                pattern="[a-zA-Z ]+">
+                            <input class="form-field" type="email" name="email" id="email" placeholder="Your Email"
+                                required>
+                            <input class="form-field" type="text" name="message" id="message"
+                                placeholder="Your Message">
+
+                            <div class="form-buttons">
+                                <input class="form-button" type="submit" name="submit" value="Send">
+                                <input class="form-button" type="reset" name="reset" value="Clear">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-detail">
+                        <div>
+                            <span class="detail-heading">Email</span>
+                            <span class="detail-link">er.gupta.arpit@gmail.com</span>
+                        </div>
+                        <div>
+                            <span class="detail-heading">LinkedIn</span>
+                            <span class="detail-link">linkedin.com/in/er-arpit-gupta/</span>
+                        </div>
+                        <div>
+                            <span class="detail-heading">GitHub</span>
+                            <span class="detail-link">github.com/er-arpitgupta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; Arpit Gupta
+            <script>document.write(new Date().getFullYear());</script>
+        </p>
+    </footer>
+</body>
+
+</html>
