@@ -66,6 +66,7 @@ body {
         font-size: 30px;
         text-decoration: none;
         background-color: #00375a;
+        border-bottom: 2px solid white;
     }
     
     .menu {
@@ -108,7 +109,7 @@ body {
 
 .outer {
     padding-left: 150px;
-    width: 85%;
+    width: 82%;
 }
 
 .home,
@@ -535,7 +536,6 @@ footer p {
     }
 
     .photo img {
-        width: 90%;
         margin: 0;
     }
 
@@ -629,6 +629,9 @@ footer p {
 
 @media (max-width: 450px) {
 
+    .photo img {
+        width: 95% !important;
+    }
     .contact-detail div{
         display: grid;
     }
@@ -674,6 +677,10 @@ footer p {
 }
 
 @media (max-width: 180px) {
+
+    .outer {
+        overflow: hidden;
+    }
     .nav-name {
         font-size: 10px;
     }
