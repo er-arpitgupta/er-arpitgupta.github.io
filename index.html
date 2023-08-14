@@ -4,11 +4,27 @@
 <head>
     <title>Arpit Gupta | Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="/static/images/favicon.png" type="image/icon">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="./static/images/favicon.png" type="image/icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/toggledarkmode.css">
+
+    <script>
+        function handleDarkMode() {
+            const darkLight = document.body.className;
+            if (darkLight === 'light') {
+                document.getElementsByClassName('moon')[0].style.display = 'block';
+                document.getElementsByClassName('sun')[0].style.display = 'none';
+                document.body.className = 'dark'
+            } else {
+                document.getElementsByClassName('sun')[0].style.display = 'block';
+                document.getElementsByClassName('moon')[0].style.display = 'none';
+                document.body.className = 'light';
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body class="light">
 
     <header class="banner">
         <a href="/" class="logo">
@@ -17,34 +33,42 @@
         <input class="menu-button" type="checkbox" id="menu-button" />
         <label class="menu-icon" for="menu-button"><span class="navicon"></span></label>
 
+        <div class="darkmode-toggle-parent">
+            <input type="checkbox" name="darkmode-toggle" id="darkmode-toggle" />
+            <label for="darkmode-toggle" onclick="handleDarkMode()">
+                <img class="sun" src="/static/images/sun.svg" alt="" srcset="">
+                <img class="moon" src="/static/images/moon.svg" style="display: none;">
+            </label>
+        </div>
+
         <ul class="menu">
             <li>
                 <a href="#home">
-                    <img src="/static/images/home.svg" alt="Home">
+                    <img src="./static/images/home.svg" alt="Home">
                     <span class="nav-name">Home</span>
                 </a>
             </li>
             <li>
                 <a href="#about">
-                    <img src="/static/images/about.svg" alt="About">
+                    <img src="./static/images/about.svg" alt="About">
                     <span class="nav-name">About</span>
                 </a>
             </li>
             <li>
                 <a href="#skills">
-                    <img src="/static/images/skills.svg" alt="Skills">
+                    <img src="./static/images/skills.svg" alt="Skills">
                     <span class="nav-name">Skills</span>
                 </a>
             </li>
             <li>
                 <a href="#work">
-                    <img src="/static/images/work.svg" alt="Work">
+                    <img src="./static/images/work.svg" alt="Work">
                     <span class="nav-name">Work</span>
                 </a>
             </li>
             <li>
                 <a href="#contact">
-                    <img src="/static/images/contact.svg" alt="Contact">
+                    <img src="./static/images/contact.svg" alt="Contact">
                     <span class="nav-name">Contact</span>
                 </a>
             </li>
@@ -54,13 +78,13 @@
     <div class="outer" id="home">
         <div class="home">
             <div class="photo">
-                <img src="/static/images/ArpitGupta-ProfilePic.jpg" alt="my photo">
+                <img src="./static/images/ArpitGupta-ProfilePic.jpg" alt="my photo">
             </div>
             <div class="home-content">
                 <div class="intro">
                     <p>Hello World! I'm</p>
                     <p>Arpit Gupta</p>
-                    <p>A versatile <span class="special">Full-Stack Developer</span> with  strong foundation in back-end
+                    <p>A versatile <span class="special">Full-Stack Developer</span> with strong foundation in back-end
                         and front-end technologies,
                         adept at creating innovative and efficient web solutions that deliver exceptional user
                         experiences.</p>
@@ -68,11 +92,11 @@
                 <div class="buttons">
                     <a href="ArpitResume.pdf" class="resume" download="ArpitGupta_Resume">Resume</a>
                     <div class="links">
-                        <a href="mailto:er.gupta.arpit@gmail.com"><img src="/static/images/gmail.svg"
+                        <a href="mailto:er.gupta.arpit@gmail.com"><img src="./static/images/gmail.svg"
                                 alt="My Gmail link"></a>
-                        <a href="https://www.linkedin.com/in/er-arpit-gupta"><img src="/static/images/linkedin.svg"
+                        <a href="https://www.linkedin.com/in/er-arpit-gupta"><img src="./static/images/linkedin.svg"
                                 alt="My LinkedIn link"></a>
-                        <a href="https://github.com/er-arpitgupta"><img src="/static/images/github.svg"
+                        <a href="https://github.com/er-arpitgupta"><img src="./static/images/github.svg"
                                 alt="My GitHub link"></a>
                     </div>
                 </div>
@@ -103,67 +127,67 @@
                     </div>
                     <div class="skill-logos">
                         <div class="box">
-                            <img src="/static/images/skills/java.svg" alt="Java">
+                            <img src="./static/images/skills/java.svg" alt="Java">
                             <span>Java</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/springio.svg" alt="Spring Boot">
+                            <img src="./static/images/skills/springio.svg" alt="Spring Boot">
                             <span>Spring Boot</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/jenkins.svg" alt="Jenkins">
+                            <img src="./static/images/skills/jenkins.svg" alt="Jenkins">
                             <span>Jenkins</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/docker.svg" alt="Docker">
+                            <img src="./static/images/skills/docker.svg" alt="Docker">
                             <span>Docker</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/kubernetes.svg" alt="Kubernetes">
+                            <img src="./static/images/skills/kubernetes.svg" alt="Kubernetes">
                             <span>Kubernetes</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/mysql.svg" alt="MySQL">
+                            <img src="./static/images/skills/mysql.svg" alt="MySQL">
                             <span>MySQL</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/mongo.svg" alt="mongoDB">
+                            <img src="./static/images/skills/mongo.svg" alt="mongoDB">
                             <span>Mongo DB</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/git.svg" alt="Git">
+                            <img src="./static/images/skills/git.svg" alt="Git">
                             <span>Git</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/html5.svg" alt="HTML5">
+                            <img src="./static/images/skills/html5.svg" alt="HTML5">
                             <span>HTML5</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/css.svg" alt="CSS3">
+                            <img src="./static/images/skills/css.svg" alt="CSS3">
                             <span>CSS3</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/javascript.svg" alt="JavaScript">
+                            <img src="./static/images/skills/javascript.svg" alt="JavaScript">
                             <span>JavaScript</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/react.svg" alt="React">
+                            <img src="./static/images/skills/react.svg" alt="React">
                             <span>React</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/api.svg" alt="Rest API">
+                            <img src="./static/images/skills/api.svg" alt="Rest API">
                             <span>Rest API</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/python.svg" alt="Python">
+                            <img src="./static/images/skills/python.svg" alt="Python">
                             <span>Python</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/django.svg" alt="Django">
+                            <img src="./static/images/skills/django.svg" alt="Django">
                             <span>Django</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/flask.svg" alt="Flask">
+                            <img src="./static/images/skills/flask.svg" alt="Flask">
                             <span>Flask</span>
                         </div>
                     </div>
@@ -174,31 +198,31 @@
                     </div>
                     <div class="tools-logos">
                         <div class="box">
-                            <img src="/static/images/skills/vscode.svg" alt="VS Code">
+                            <img src="./static/images/skills/vscode.svg" alt="VS Code">
                             <span>VS Code</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/intellij.svg" alt="IntelliJ Idea">
+                            <img src="./static/images/skills/intellij.svg" alt="IntelliJ Idea">
                             <span>IntelliJ</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/pycharm.svg" alt="PyCharm">
+                            <img src="./static/images/skills/pycharm.svg" alt="PyCharm">
                             <span>PyCharm</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/eclipse.svg" alt="Eclipse">
+                            <img src="./static/images/skills/eclipse.svg" alt="Eclipse">
                             <span>Eclipse</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/github.svg" alt="GitHub">
+                            <img src="./static/images/skills/github.svg" alt="GitHub">
                             <span>GitHub</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/postman.svg" alt="Postman">
+                            <img src="./static/images/skills/postman.svg" alt="Postman">
                             <span>Postman</span>
                         </div>
                         <div class="box">
-                            <img src="/static/images/skills/sqldeveloper3.svg" alt="Oracle SQL Developer">
+                            <img src="./static/images/skills/sqldeveloper3.svg" alt="Oracle SQL Developer">
                             <span>SQL Developer</span>
                         </div>
                     </div>
@@ -212,7 +236,7 @@
             <div class="content">
 
                 <div class="project">
-                    <img src="/static/images/project/lms.png" alt="Library Management System">
+                    <img src="./static/images/project/lms.png" alt="Library Management System">
                     <div class="project-content">
                         <p class="project-heading">Library Management System</p>
                         <p>Technologies: <br class="line-break"><span class="special">React, Spring Boot</span></p>
@@ -228,7 +252,7 @@
                 </div>
 
                 <div class="project">
-                    <img src="/static/images/project/photofolio.jpg" alt="PhotoFolio">
+                    <img src="./static/images/project/photofolio.jpg" alt="PhotoFolio">
                     <div class="project-content">
                         <p class="project-heading">PhotoFolio</p>
                         <p>Technologies: <span class="special">HTML, CSS, React</span></p>
@@ -238,6 +262,23 @@
                         </ul>
                         <div style="display: none;">
                             <a href="">Live</a>
+                            <a href="">Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="./static/images/project/opensource.webp" alt="Library Management System">
+                    <div class="project-content">
+                        <p class="project-heading">CSS Templates</p>
+                        <p>Technologies: <br class="line-break"><span class="special">HTML, CSS, JS</span></p>
+                        <ul>
+                            <li>A place where I added my custom made various templates using HTML, CSS and JS</li>
+                            <li>It is also an open source meaning you can find useful templates and can use on the go.
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="project/opensource/opensource.html">Live</a>
                             <a href="">Repo</a>
                         </div>
                     </div>
