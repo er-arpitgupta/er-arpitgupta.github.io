@@ -727,13 +727,9 @@ footer p {
         background-color: white;
     }
 
-    .content {
+    .content, .box, .form-field {
         background-color: black;
         box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.6);
-    }
-
-    .box span {
-        color: black;
     }
 
 }
