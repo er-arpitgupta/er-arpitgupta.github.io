@@ -435,6 +435,12 @@ footer p {
         display: none;
     }
 
+    .darkmode-toggle-parent label {
+        top: 20px !important;
+        left: unset !important;
+        right: 70px !important;
+    }
+
     .menu-icon {
         cursor: pointer;
         float: right;
@@ -719,7 +725,10 @@ footer p {
 .dark {
     background-color: #1f1f1f;
 
-    .intro, .before-heading, .heading, .content {
+    .intro,
+    .before-heading,
+    .heading,
+    .content {
         color: white;
     }
 
@@ -727,7 +736,9 @@ footer p {
         background-color: white;
     }
 
-    .content, .box, .form-field {
+    .content,
+    .box,
+    .form-field {
         background-color: black;
         box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.6);
     }
