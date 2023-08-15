@@ -177,3 +177,11 @@ header svg {
     }
 
 }
+
+@media (max-width: 415px) {
+    .banner-heading {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
