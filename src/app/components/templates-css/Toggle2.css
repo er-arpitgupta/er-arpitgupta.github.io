@@ -1,0 +1,67 @@
+.language-toggle label {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255);
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.6),
+        inset 0px -5px 15px rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: 300ms;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -2px;
+        border-radius: 30px;
+        background: linear-gradient(to bottom, grey, white);
+        transition: 300ms;
+    }
+
+    &::after {
+        content: url("../../../assets/images/en.png");
+        position: absolute;
+        zoom: .07;
+        top: 120px;
+        left: 120px;
+        filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 1));
+        transition: 300ms;
+    }
+}
+
+.language-toggle input:checked+label::after {
+    content: url("../../../assets/images/fr.png");
+    zoom: 0.07;
+    left: 800px;
+}
+
+.language-toggle span {
+    position: relative;
+    width: 15px;
+    top: 13px;
+    font: bold 23px arial, sans-serif;
+    background-color: #565656;
+    color: transparent !important;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5) !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    background-clip: text !important;
+    word-spacing: 0;
+    letter-spacing: 0;
+    padding-top: 2px;
+    color: grey;
+}
+
+.language-toggle .fr {
+    left: 11px;
+}
+
+.language-toggle .en {
+    left: 27px;
+}
