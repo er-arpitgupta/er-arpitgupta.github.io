@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.81f98520.css",
-    "main.js": "/static/js/main.68e8e1a7.js",
+    "main.js": "/static/js/main.96bf6a30.js",
     "static/js/787.f6fcb317.chunk.js": "/static/js/787.f6fcb317.chunk.js",
-    "static/media/ArpitGupta-ProfilePic.jpg": "/static/media/ArpitGupta-ProfilePic.08cffaab0b28434b7ce2.jpg",
+    "static/media/ArpitGupta.jpg": "/static/media/ArpitGupta.08cffaab0b28434b7ce2.jpg",
     "static/media/bakerie_bold.otf": "/static/media/bakerie_bold.2dbdfc6f13866551de09.otf",
     "static/media/templates.png": "/static/media/templates.3010bb76fad9af7f99bb.png",
     "static/media/photofolio.png": "/static/media/photofolio.201fc0debf337200de83.png",
@@ -55,11 +55,11 @@
     "static/media/moon.svg": "/static/media/moon.bf8a18e9e8f314f3171f.svg",
     "static/media/arrow.svg": "/static/media/arrow.eab01785514930633b58.svg",
     "main.81f98520.css.map": "/static/css/main.81f98520.css.map",
-    "main.68e8e1a7.js.map": "/static/js/main.68e8e1a7.js.map",
+    "main.96bf6a30.js.map": "/static/js/main.96bf6a30.js.map",
     "787.f6fcb317.chunk.js.map": "/static/js/787.f6fcb317.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81f98520.css",
-    "static/js/main.68e8e1a7.js"
+    "static/js/main.96bf6a30.js"
   ]
 }
