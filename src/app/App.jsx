@@ -9,8 +9,8 @@ export default function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="templates" element={<Templates />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/templates" element={<Templates />} />
       </Routes>
     </HashRouter>
   );
