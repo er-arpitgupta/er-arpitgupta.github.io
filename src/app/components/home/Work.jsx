@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { IMAGE_LIST, WORK_PROJECTS } from '../../../utils/constants';
 import beforeSection from '../../../utils/helper';
 
@@ -8,10 +9,10 @@ export default function Work() {
       <div className="content">
         {Object.keys(WORK_PROJECTS).map((key, index) => {
           return (
-            <a
+            <Link
+              to={key === 'templates' ? '/templates' : '/'}
               key={index}
               className="project"
-              href={key === 'templates' ? '/templates' : '/'}
             >
               <img src={IMAGE_LIST[`${key}.png`]} alt={key} />
               <div className="project-content">
@@ -25,7 +26,7 @@ export default function Work() {
                   <li>{WORK_PROJECTS[key][3]}</li>
                 </ul>
               </div>
-            </a>
+            </Link>
           );
         })}
       </div>

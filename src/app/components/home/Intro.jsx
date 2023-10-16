@@ -9,11 +9,7 @@ import {
 export default function Intro() {
   return (
     <div className="home">
-      <img
-        className="photo"
-        src={IMAGE_LIST['ArpitGupta-ProfilePic.jpg']}
-        alt=""
-      />
+      <img className="photo" src={IMAGE_LIST['ArpitGupta.jpg']} alt="" />
       <div className="home-content">
         <div className="intro">
           <p>Hello World! I'm</p>
