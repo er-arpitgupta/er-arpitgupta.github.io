@@ -15,7 +15,7 @@ export default function About() {
           transform complex requirements into innovative and user-friendly
           solutions. With meticulous attention to detail, I deliver clean and
           efficient code, ensuring the successful implementation of
-          comprehensive web development projects.
+          comprehensive web development projects..
         </p>
       </div>
     </div>
