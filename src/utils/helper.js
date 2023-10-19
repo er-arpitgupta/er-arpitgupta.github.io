@@ -7,12 +7,19 @@ export default function beforeSection(beforeHeading, heading) {
   );
 }
 
-export const handleImagesImport = () => {
-  const imageContext = require.context(
-    '../assets/images',
-    false,
-    /\.(png|jpg|jpeg|gif|svg|webp)$/
-  );
+export const handleImagesImport = path => {
+  const imageContext =
+    path === 'photofolio'
+      ? require.context(
+          '../assets/images/photofolio',
+          false,
+          /\.(png|jpg|jpeg|gif|svg|webp)$/
+        )
+      : require.context(
+          '../assets/images',
+          false,
+          /\.(png|jpg|jpeg|gif|svg|webp)$/
+        );
 
   let images = {};
   imageContext.keys().forEach(imagePath => {

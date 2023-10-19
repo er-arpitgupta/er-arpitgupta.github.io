@@ -35,7 +35,7 @@ export default function Dropdown() {
             </div>
             <ul className="auto-dropdown1-items">
               {MENU_ITEM.map(item => {
-                return <li>{item}</li>;
+                return <li key={item}>{item}</li>;
               })}
             </ul>
           </div>
@@ -56,6 +56,7 @@ export default function Dropdown() {
               {MENU_ITEM.map(item => {
                 return (
                   <li
+                    key={item}
                     className="auto-dropdown3-items-li"
                     onClick={() => handleItemClick(item)}
                   >

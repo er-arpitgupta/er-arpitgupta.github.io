@@ -3,6 +3,7 @@ import { handleImagesImport } from './helper';
 export const PORTFOLIO_OWNER = 'Arpit Gupta';
 
 export const IMAGE_LIST = handleImagesImport();
+export const PHOTOFOLIO_IMAGE_LIST = handleImagesImport('photofolio');
 
 export const SKILLS = {
   java: 'Java',

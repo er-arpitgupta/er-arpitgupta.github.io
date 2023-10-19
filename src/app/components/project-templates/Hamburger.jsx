@@ -20,7 +20,7 @@ export default function Hamburger() {
             />
             <label
               className="hamburger1-menu-icon"
-              for="hamburger1-menu-button"
+              htmlFor="hamburger1-menu-button"
             >
               <span className="navicon"></span>
             </label>
@@ -28,7 +28,7 @@ export default function Hamburger() {
         </div>
 
         <div className="box3">
-          <label className="hamburger2" for="check">
+          <label className="hamburger2" htmlFor="check">
             <input type="checkbox" id="check" />
             <span></span>
             <span></span>

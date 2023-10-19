@@ -16,7 +16,7 @@ export default function Toggle() {
               id="darkmode-toggle"
               style={{ display: 'none' }}
             />
-            <label for="darkmode-toggle">
+            <label htmlFor="darkmode-toggle">
               <img className="sun" src={IMAGE_LIST['sun.svg']} alt="sun" />
               <img className="moon" src={IMAGE_LIST['moon.svg']} alt="moon" />
             </label>
@@ -31,7 +31,7 @@ export default function Toggle() {
               id="language-toggle"
               style={{ display: 'none' }}
             />
-            <label for="language-toggle">
+            <label htmlFor="language-toggle">
               <span className="fr">FR</span>
               <span className="en">EN</span>
             </label>

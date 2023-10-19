@@ -10,7 +10,13 @@ export default function Work() {
         {Object.keys(WORK_PROJECTS).map((key, index) => {
           return (
             <Link
-              to={key === 'templates' ? '/templates' : '/'}
+              to={
+                key === 'photofolio'
+                  ? '/photofolio'
+                  : key === 'templates'
+                  ? '/templates'
+                  : '/'
+              }
               key={index}
               className="project"
             >
