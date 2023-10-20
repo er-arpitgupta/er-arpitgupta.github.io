@@ -6,6 +6,8 @@ export default function Featured() {
     PHOTOFOLIO_IMAGE_LIST['nature1.jpg'],
     PHOTOFOLIO_IMAGE_LIST['nature2.jpg'],
     PHOTOFOLIO_IMAGE_LIST['nature3.jpg'],
+    PHOTOFOLIO_IMAGE_LIST['nature4.jpg'],
+    PHOTOFOLIO_IMAGE_LIST['nature5.jpg'],
   ];
   const timeoutRef = useRef(null);
   const [index, setIndex] = useState(0);

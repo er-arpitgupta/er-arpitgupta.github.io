@@ -1,5 +1,9 @@
 import { useState } from 'react';
-import { Header, Featured } from '../../components/project-photofolio';
+import {
+  Header,
+  Featured,
+  Portfolio,
+} from '../../components/project-photofolio';
 import Login from '../login/Login';
 
 import './Photofolio.css';
@@ -20,6 +24,7 @@ export default function Photofolio() {
         <div className="photofolio-container">
           <Header />
           <Featured />
+          <Portfolio />
         </div>
       ) : (
         <Login setLogin={setLogin} />
