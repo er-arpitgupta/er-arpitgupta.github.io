@@ -15,6 +15,12 @@ export const handleImagesImport = path => {
           false,
           /\.(png|jpg|jpeg|gif|svg|webp)$/
         )
+      : path === 'compressed'
+      ? require.context(
+          '../assets/images/photofolio/compressed',
+          false,
+          /\.(png|jpg|jpeg|gif|svg|webp)$/
+        )
       : require.context(
           '../assets/images',
           false,

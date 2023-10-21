@@ -1,7 +1,17 @@
+import { Link } from 'react-router-dom';
+import { IMAGE_LIST } from '../../../utils/constants';
+
 export default function Header() {
   return (
-    <div className="photofolio-header">
+    <div className="photofolio-header" id="home">
       <div className="photofolio-header-container">
+        <Link to="/" style={{ height: '35px' }}>
+          <img
+            className="back-arrow"
+            src={IMAGE_LIST[`back-arrow.svg`]}
+            alt=""
+          />
+        </Link>
         <ul>
           <li>Home</li>
           <li>Portfolio</li>

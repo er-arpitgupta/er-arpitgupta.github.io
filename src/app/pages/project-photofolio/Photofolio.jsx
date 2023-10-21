@@ -3,6 +3,9 @@ import {
   Header,
   Featured,
   Portfolio,
+  About,
+  Contact,
+  Footer,
 } from '../../components/project-photofolio';
 import Login from '../login/Login';
 
@@ -25,6 +28,9 @@ export default function Photofolio() {
           <Header />
           <Featured />
           <Portfolio />
+          <About />
+          <Contact />
+          <Footer />
         </div>
       ) : (
         <Login setLogin={setLogin} />

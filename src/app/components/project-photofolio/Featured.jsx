@@ -23,7 +23,7 @@ export default function Featured() {
   }, [index, images.length]);
 
   return (
-    <div className="featured">
+    <div className="featured" id="featured">
       <div
         className="featured-slider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}

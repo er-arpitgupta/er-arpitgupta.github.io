@@ -4,6 +4,7 @@ export const PORTFOLIO_OWNER = 'Arpit Gupta';
 
 export const IMAGE_LIST = handleImagesImport();
 export const PHOTOFOLIO_IMAGE_LIST = handleImagesImport('photofolio');
+export const PHOTOFOLIO_COMPRESSED = handleImagesImport('compressed');
 
 export const SKILLS = {
   java: 'Java',
@@ -83,6 +84,15 @@ export const MENU_ITEM = [
   'Microsoft Edge',
   'Opera',
 ];
+
+export const PORTFOLIO_OPTIONS = {
+  all: 'All',
+  mandala: 'Mandala',
+  sunset: 'Sunset',
+  nature: 'Nature',
+  editing: 'Editing',
+  wildlife: 'Wildlife',
+};
 
 export const MAIL_ID = 'er.gupta.arpit@gmail.com';
 export const LINKEDIN = 'https://www.linkedin.com/in/er-arpit-gupta';
