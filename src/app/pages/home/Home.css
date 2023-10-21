@@ -1,11 +1,11 @@
 @font-face {
   font-family: custom;
-  src: url('../assets/fonts/bukhari_script.ttf');
+  src: url('../../../assets/fonts/bukhari_script.ttf');
 }
 
 @font-face {
   font-family: bakerie_bold;
-  src: url('../assets/fonts/bakerie_bold.otf');
+  src: url('../../../assets/fonts/bakerie_bold.otf');
 }
 
 body {
@@ -57,35 +57,35 @@ body {
       display: block;
       padding: 0;
       padding-top: 100px !important;
-    }
 
-    .menu li {
-      margin: 30px 5px;
-      padding: 8px 5px 12px 3px;
-      height: 20px;
-      transition: 0.2s;
-
-      &:hover {
-        background-color: #2775a5;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+      > li {
+        margin: 30px 5px;
+        padding: 8px 5px 12px 3px;
+        height: 20px;
         transition: 0.2s;
+
+        &:hover {
+          background-color: #2775a5;
+          border-radius: 5px;
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+          transition: 0.2s;
+        }
+
+        > a {
+          margin: 0;
+          width: 20px;
+          color: white;
+          text-decoration: none;
+          display: flex;
+          align-items: flex-start;
+
+          > img {
+            padding: 0px 10px;
+            width: 20px;
+            height: auto;
+          }
+        }
       }
-    }
-
-    .menu img {
-      padding: 0px 10px;
-      width: 20px;
-      height: auto;
-    }
-
-    .menu a {
-      margin: 0;
-      width: 20px;
-      color: white;
-      text-decoration: none;
-      display: flex;
-      align-items: flex-start;
     }
 
     &:hover {
@@ -142,19 +142,17 @@ body {
       box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
       transition: 0.3s;
     }
-  }
 
-  .box span {
-    width: fit-content;
-  }
+    > span {
+      width: fit-content;
+    }
 
-  .box img {
-    width: 30px;
-    height: auto;
+    > img {
+      width: 30px;
+      height: auto;
+    }
   }
 }
-
-
 
 .home {
   display: flex;
@@ -175,14 +173,14 @@ body {
   .intro p {
     margin: 15px 0px;
     padding: 0;
-  }
 
-  .intro p:nth-child(2) {
-    font-size: 50px;
-  }
+    &:nth-child(2) {
+      font-size: 50px;
+    }
 
-  .intro p:nth-child(3) {
-    font-size: 25px;
+    &:nth-child(3) {
+      font-size: 25px;
+    }
   }
 
   .buttons {
@@ -293,22 +291,21 @@ body {
 
   .project-content {
     width: 600px;
+
+    > p {
+      margin: 0;
+    }
   }
 
   .line-break {
     display: none;
   }
-}
 
-.project img {
-  width: 400px;
-  padding-right: 20px;
+  > img {
+    width: 400px;
+    padding-right: 20px;
+  }
 }
-
-.project-content p {
-  margin: 0;
-}
-
 .project-content a {
   padding: 5px 10px;
   color: #0066a4;
@@ -322,25 +319,25 @@ div:has(> .form) {
 
 .form {
   display: grid;
+
+  > input[type='text'] {
+    width: 300px;
+    height: 20px;
+    padding: 10px 20px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    outline: none;
+
+    &:focus {
+      border: 2px solid #0066a4;
+    }
+  }
 }
 
 .form-heading {
   margin: 10px;
-}
-
-.form input[type="text"] {
-  width: 300px;
-  height: 20px;
-  padding: 10px 20px;
-  vertical-align: middle;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  border: 1px solid grey;
-  outline: none;
-
-  &:focus {
-    border: 2px solid #0066a4;
-  }
 }
 
 .form-buttons input {
@@ -351,35 +348,35 @@ div:has(> .form) {
   border-radius: 20px;
   outline: none;
   transition: 0.2s;
+
+  &:nth-child(1):hover {
+    box-shadow: 1px 1px 4px 0px green;
+    transition: 0.2s;
+  }
+
+  &:nth-child(2):hover {
+    box-shadow: 1px 1px 4px 0px red;
+    transition: 0.2s;
+  }
 }
 
 .contact-detail {
   display: grid;
   align-content: center;
-}
 
-.contact-detail div {
-  display: grid;
-  margin-bottom: 20px;
-}
+  > div {
+    display: grid;
+    margin-bottom: 20px;
 
-.contact-detail div span {
-  margin: 0;
+    > span {
+      margin: 0;
+    }
+  }
 }
 
 .detail-heading {
   font-size: 15px;
   color: #0066a4;
-}
-
-.form-buttons input:nth-child(1):hover {
-  box-shadow: 1px 1px 4px 0px green;
-  transition: 0.2s;
-}
-
-.form-buttons input:nth-child(2):hover {
-  box-shadow: 1px 1px 4px 0px red;
-  transition: 0.2s;
 }
 
 .home-footer {
@@ -410,7 +407,6 @@ div:has(> .form) {
     .menu-button {
       display: none;
     }
-
   }
 
   .banner a {
@@ -460,24 +456,24 @@ div:has(> .form) {
   }
 
   .banner {
-    .menu-button:checked~.menu {
+    .menu-button:checked ~ .menu {
       max-height: 240px;
     }
 
-    .menu-button:checked~.menu-icon .navicon {
+    .menu-button:checked ~ .menu-icon .navicon {
       background-color: transparent;
     }
 
-    .menu-button:checked~.menu-icon .navicon:before {
+    .menu-button:checked ~ .menu-icon .navicon:before {
       transform: rotate(-45deg);
     }
 
-    .menu-button:checked~.menu-icon .navicon:after {
+    .menu-button:checked ~ .menu-icon .navicon:after {
       transform: rotate(45deg);
     }
 
-    .menu-button:checked~.menu-icon:not(.steps) .navicon:before,
-    .menu-button:checked~.menu-icon:not(.steps) .navicon:after {
+    .menu-button:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .menu-button:checked ~ .menu-icon:not(.steps) .navicon:after {
       top: 0;
     }
   }
@@ -590,7 +586,7 @@ div:has(> .form) {
     padding: 20px;
   }
 
-  .form input[type="text"] {
+  .form input[type='text'] {
     width: auto;
   }
 
@@ -640,7 +636,6 @@ div:has(> .form) {
 }
 
 @media (max-width: 300px) {
-
   .hidden,
   .form {
     display: none;

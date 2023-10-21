@@ -4,8 +4,6 @@ import Home from './pages/home/Home';
 import Templates from './pages/project-template/Templates';
 import Photofolio from './pages/project-photofolio/Photofolio';
 
-import './App.css';
-
 export default function App() {
   return (
     <HashRouter>

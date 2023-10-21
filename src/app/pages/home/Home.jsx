@@ -8,6 +8,8 @@ import {
   Footer,
 } from '../../components/home';
 
+import './Home.css';
+
 export default function Home() {
   return (
     <>
