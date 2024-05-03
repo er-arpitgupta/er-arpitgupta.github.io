@@ -5,14 +5,12 @@ export default function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleDarkMode = () => {
-    const darkLight = document.body.className;
-    if (darkLight === 'light') {
-      setIsDarkMode(true);
-      document.body.className = 'dark';
-    } else {
-      setIsDarkMode(false);
-      document.body.className = 'light';
-    }
+    setIsDarkMode(isDarkMode ? false : true);
+    document.body.classList.toggle('dark');
+  };
+
+  const handleClick = item => {
+    document.querySelector(`#${item}`).scrollIntoView();
   };
 
   return (
@@ -21,7 +19,12 @@ export default function Header() {
         A<span className="hidden">rpit </span>G
         <span className="hidden">upta</span>
       </a>
-      <input className="menu-button" type="checkbox" id="menu-button" />
+      <input
+        className="menu-button"
+        type="checkbox"
+        id="menu-button"
+        style={{ display: 'none' }}
+      />
       <label className="menu-icon" htmlFor="menu-button">
         <span className="navicon"></span>
       </label>
@@ -40,11 +43,9 @@ export default function Header() {
       <ul className="menu">
         {Object.keys(NAVBAR).map((item, index) => {
           return (
-            <li key={index}>
-              <a href={`#${item}`}>
-                <img src={IMAGE_LIST[`${item}.svg`]} alt={item} />
-                <span className="nav-name">{NAVBAR[item]}</span>
-              </a>
+            <li key={index} onClick={() => handleClick(item)}>
+              <img src={IMAGE_LIST[`${item}.svg`]} alt={item} />
+              <span className="nav-name">{NAVBAR[item]}</span>
             </li>
           );
         })}

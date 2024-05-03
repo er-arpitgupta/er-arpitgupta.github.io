@@ -8,15 +8,6 @@
     src: url("../../../assets/fonts/bakerie_bold.otf");
 }
 
-body {
-    font-family: bakerie_bold;
-    margin: 0px;
-    background-color: rgb(240, 240, 240);
-    word-spacing: 5px;
-    letter-spacing: 1px;
-    user-select: none;
-}
-
 .templates-container .header {
     .social-links {
         display: flex;
@@ -115,7 +106,7 @@ body {
     }
 }
 
-.container {
+.templates-container .container {
     padding: 5%;
     background-color: rgba(243, 125, 13, 0.2);
     display: grid;

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="outer" id="home">
+      <div className="container">
         <Intro />
         <About />
         <Skills />

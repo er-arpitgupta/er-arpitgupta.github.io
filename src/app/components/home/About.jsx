@@ -6,16 +6,11 @@ export default function About() {
       {beforeSection('Some Info', 'About Me')}
       <div className="content">
         <p>
-          As a Full-Stack Developer, I possess the ability to handle all layers
-          of a software application, from crafting visually appealing user
-          interfaces to implementing robust server-side logic and database
-          management. I excel in problem-solving, adapting to new technologies,
-          and staying up-to-date with industry trends. Collaborative and
-          effective in communication, I am a valuable team player who can
-          transform complex requirements into innovative and user-friendly
-          solutions. With meticulous attention to detail, I deliver clean and
-          efficient code, ensuring the successful implementation of
-          comprehensive web development projects..
+          "Crafting captivating digital experiences one line of code at a time.
+          With a passion for frontend technologies, I blend creativity with
+          technical prowess to breathe life into pixels. Welcome to my
+          playground, where every click sparks innovation and every scroll
+          unveils the artistry of UI development."
         </p>
       </div>
     </div>

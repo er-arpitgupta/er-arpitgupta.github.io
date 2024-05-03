@@ -22,11 +22,14 @@ export default function Work() {
             >
               <img src={IMAGE_LIST[`${key}.png`]} alt={key} />
               <div className="project-content">
-                <p className="project-heading">{WORK_PROJECTS[key][0]}</p>
-                <p>
+                <h3>{WORK_PROJECTS[key][0]}</h3>
+                {/* <p className="project-heading">{WORK_PROJECTS[key][0]}</p> */}
+                <h5>Technologies:<span className="special">{WORK_PROJECTS[key][1]}</span>
+                </h5>
+                {/* <p>
                   Technologies: <br className="line-break" />
                   <span className="special">{WORK_PROJECTS[key][1]}</span>
-                </p>
+                </p> */}
                 <ul>
                   <li>{WORK_PROJECTS[key][2]}</li>
                   <li>{WORK_PROJECTS[key][3]}</li>

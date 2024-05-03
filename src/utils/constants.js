@@ -7,33 +7,22 @@ export const PHOTOFOLIO_IMAGE_LIST = handleImagesImport('photofolio');
 export const PHOTOFOLIO_COMPRESSED = handleImagesImport('compressed');
 
 export const SKILLS = {
-  java: 'Java',
-  springio: 'Spring Boot',
-  jenkins: 'Jenkins',
-  docker: 'Docker',
-  kubernetes: 'Kubernetes',
-  apachekafka: 'Apache Kafka',
-  mysql: 'MySQL',
-  mongodb: 'MongoDB',
-  git: 'Git',
   html: 'HTML',
   css: 'CSS',
   javascript: 'JavaScript',
+  jquery: 'jQuery',
+  bootstrap: 'Bootstrap',
   react: 'React.JS',
+  git: 'Git',
   api: 'Rest API',
-  python: 'Python',
-  django: 'Django',
-  flask: 'Flask',
 };
 
 export const TOOLS = {
   vscode: 'VS Code',
-  intellij: 'IntelliJ',
-  pycharm: 'PyCharm',
-  eclipse: 'Eclipse',
   github: 'GitHub',
   postman: 'Postman',
-  sqldeveloper: 'Oracle SQL Developer',
+  jira: 'Jira',
+  confluence: 'Confluence'
 };
 
 export const NAVBAR = {

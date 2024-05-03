@@ -11,11 +11,9 @@ const Login = ({ setLogin }) => {
 
   return (
     <div className="login-container">
-      <div className="hidden-div"></div>
-      <input type="text" name="username" value={LOGIN_USER} disabled />
+      <span>{LOGIN_USER}</span>
       <input
         type="password"
-        name="password"
         placeholder="Password"
         onChange={event => setPassword(event.target.value)}
       />

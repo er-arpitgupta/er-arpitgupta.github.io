@@ -8,7 +8,7 @@ export default function About() {
         <img src={myphoto} alt="" />
         <div className="about-content">
           <span>Arpit Gupta,</span>
-          <span>Full-Stack Developer at TCS</span>
+          <span>UI Developer at EY</span>
           <p>
             I love to keep up my process of learning to figure out better ways
             of solving problems. Moreover, I love to compete with my own past

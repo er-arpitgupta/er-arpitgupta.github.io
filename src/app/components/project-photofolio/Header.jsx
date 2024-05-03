@@ -2,10 +2,16 @@ import { Link } from 'react-router-dom';
 import { IMAGE_LIST } from '../../../utils/constants';
 
 export default function Header() {
+  const handleClick = () => {
+    const link = document.querySelector('link[rel="icon"]');
+    link.setAttribute('href', 'favicon.png');
+    document.title = 'Arpit Gupta | Portfolio';
+  };
+
   return (
     <div className="photofolio-header" id="home">
       <div className="photofolio-header-container">
-        <Link to="/" style={{ height: '35px' }}>
+        <Link to="/" style={{ height: '35px' }} onClick={() => handleClick()}>
           <img
             className="back-arrow"
             src={IMAGE_LIST[`back-arrow.svg`]}
