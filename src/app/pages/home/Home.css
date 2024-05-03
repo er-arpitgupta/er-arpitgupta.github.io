@@ -352,6 +352,7 @@ div:has(> .form) {
 }
 
 .container {
+
   .home,
   .about,
   .skills,
@@ -360,7 +361,6 @@ div:has(> .form) {
     min-height: calc(100vh - 100px);
     padding-top: 100px;
   }
-
 
   /* CSS FOR HOME SECTION */
   .home {

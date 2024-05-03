@@ -12,7 +12,7 @@ export default function Contact() {
     <div className="contact" id="contact">
       {beforeSection('Say Hello', 'Contact')}
       <div className="content">
-        <span style={{marginBottom: '20px'}}>Get in touch</span>
+        <span style={{ marginBottom: '20px' }}>Get in touch</span>
         <div className="links">
           {Object.keys(INTRO).map((item, index) => {
             return (

@@ -2,7 +2,7 @@ import myphoto from '../../../assets/images/Arpit-Photofolio.png';
 
 export default function About() {
   return (
-    <div className="photofolio-about" id='about'>
+    <div className="photofolio-about" id="about">
       <span className="about-heading">About</span>
       <div className="about-body">
         <img src={myphoto} alt="" />

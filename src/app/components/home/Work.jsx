@@ -24,7 +24,9 @@ export default function Work() {
               <div className="project-content">
                 <h3>{WORK_PROJECTS[key][0]}</h3>
                 {/* <p className="project-heading">{WORK_PROJECTS[key][0]}</p> */}
-                <h5>Technologies:<span className="special">{WORK_PROJECTS[key][1]}</span>
+                <h5>
+                  Technologies:
+                  <span className="special">{WORK_PROJECTS[key][1]}</span>
                 </h5>
                 {/* <p>
                   Technologies: <br className="line-break" />

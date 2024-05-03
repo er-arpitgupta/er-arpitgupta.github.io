@@ -22,7 +22,7 @@ export const TOOLS = {
   github: 'GitHub',
   postman: 'Postman',
   jira: 'Jira',
-  confluence: 'Confluence'
+  confluence: 'Confluence',
 };
 
 export const NAVBAR = {
