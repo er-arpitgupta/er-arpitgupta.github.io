@@ -55,6 +55,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: flex-start;
   color: white;
+  gap: 10px;
 }
 
 .banner .menu li:hover {
@@ -66,7 +67,6 @@ body::-webkit-scrollbar-thumb {
 .banner .menu img {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
 }
 
 .darkmode-parent .sun {
@@ -239,12 +239,12 @@ body::-webkit-scrollbar-thumb {
   color: white;
 }
 
-.before-heading::before {
+.dark .before-heading::before {
   background-color: white;
 }
 
-.content,
-.box {
+.dark .content,
+.dark .box {
   background-color: black;
   box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.6);
 }
@@ -331,7 +331,7 @@ body::-webkit-scrollbar-thumb {
     background-color: white;
     transition: background 0.2s ease-out;
   }
-  
+
   .navicon::before {
     top: 5px;
   }
@@ -355,14 +355,14 @@ body::-webkit-scrollbar-thumb {
     display: grid;
     margin: 0;
     max-height: 0;
-    padding: 0 20px 0;
+    padding: 0 20px 0 !important;
     overflow: hidden;
     clear: both;
     transition: max-height 200ms ease-out;
   }
 
   .menu li {
-    margin: 10px 0;
+    margin: 10px 0 !important;
   }
 
   .menu-button:checked ~ .menu {
