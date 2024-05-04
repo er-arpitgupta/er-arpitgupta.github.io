@@ -256,22 +256,20 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 576px) {
   .container {
     padding: 20px;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .photo {
+    width: 200px;
+  }
 
-    .home {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .photo {
-        width: 200px;
-      }
-
-      .home-content {
-        margin-top: 20px;
-        text-align: center;
-      }
-    }
+  .home .home-content {
+    margin-top: 20px;
+    text-align: center;
   }
 }
 
@@ -280,10 +278,9 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-    .photo {
-      width: 300px;
-    }
+  }
+  .home .photo {
+    width: 300px;
   }
 }
 
@@ -298,105 +295,96 @@ body::-webkit-scrollbar-thumb {
     width: 100vw;
     background: linear-gradient(to left, #0066a4, #00375a);
     box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.2);
+  }
 
-    .logo {
-      float: left;
-      font-size: 30px;
-      padding: 10px 20px;
+  .banner .logo {
+    float: left;
+    font-size: 30px;
+    padding: 10px 20px;
+  }
+
+  .banner a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .darkmode-parent {
+    position: relative;
+    top: 18px;
+  }
+
+  .menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 99;
+  }
+
+  .menu-icon .navicon {
+    width: 18px;
+    height: 2px;
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    background-color: white;
+    transition: background 0.2s ease-out;
+
+    &::before {
+      top: 5px;
     }
 
-    a {
-      color: white;
-      text-decoration: none;
+    &::after {
+      top: -5px;
     }
 
-    .darkmode-parent {
-      position: relative;
-      top: 18px;
-    }
-
-    .menu-icon {
+    &::before,
+    &::after {
+      background-color: white;
+      content: "";
+      display: block;
+      height: 100%;
       position: absolute;
-      top: 20px;
-      right: 50px;
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      z-index: 99;
-
-      .navicon {
-        width: 18px;
-        height: 2px;
-        display: block;
-        position: relative;
-        margin-top: 10px;
-        background-color: white;
-        transition: background 0.2s ease-out;
-
-        &::before {
-          top: 5px;
-        }
-
-        &::after {
-          top: -5px;
-        }
-
-        &::before,
-        &::after {
-          background-color: white;
-          content: "";
-          display: block;
-          height: 100%;
-          position: absolute;
-          transition: all 0.2s ease-out;
-          width: 100%;
-        }
-      }
-    }
-
-    .menu {
-      display: grid;
-      margin: 0;
-      max-height: 0;
-      padding: 0 20px 0;
-      overflow: hidden;
-      clear: both;
-      transition: max-height 200ms ease-out;
-
-      li {
-        margin: 10px 0;
-      }
-    }
-
-    .menu-button:checked ~ .menu {
-      max-height: 275px;
-    }
-
-    .menu-button:checked ~ .menu-icon .navicon {
-      background-color: transparent;
-    }
-
-    .menu-button:checked ~ .menu-icon .navicon:before {
-      transform: rotate(-45deg);
-    }
-
-    .menu-button:checked ~ .menu-icon .navicon:after {
-      transform: rotate(45deg);
-    }
-
-    .menu-button:checked ~ .menu-icon:not(.steps) .navicon:before,
-    .menu-button:checked ~ .menu-icon:not(.steps) .navicon:after {
-      top: 0;
+      transition: all 0.2s ease-out;
+      width: 100%;
     }
   }
 
-  .buttons {
-    width: auto;
-    justify-content: space-evenly;
+  .menu {
+    display: grid;
+    margin: 0;
+    max-height: 0;
+    padding: 0 20px 0;
+    overflow: hidden;
+    clear: both;
+    transition: max-height 200ms ease-out;
+
+    li {
+      margin: 10px 0;
+    }
   }
 
-  .title {
-    text-align: center;
+  .menu-button:checked ~ .menu {
+    max-height: 275px;
+  }
+
+  .menu-button:checked ~ .menu-icon .navicon {
+    background-color: transparent;
+  }
+
+  .menu-button:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-button:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-button:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-button:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
   }
 
   .project {
@@ -434,54 +422,52 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(#0066a4 0%, #00375a 100%);
     text-align: center;
     transition: 300ms;
+  }
 
-    .logo {
-      width: 100%;
-      height: 62px;
-      padding-top: 10px;
-      color: white;
-      font-size: 30px;
-      text-decoration: none;
-      background-color: #00375a;
-      border-bottom: 2px solid white;
-      margin-bottom: 60px;
-    }
+  .banner .logo {
+    width: 100%;
+    height: 62px;
+    padding-top: 10px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #00375a;
+    border-bottom: 2px solid white;
+    margin-bottom: 60px;
+  }
+
+  .hidden,
+  .nav-name,
+  .menu-icon {
+    display: none;
+  }
+
+  .banner:hover {
+    width: 120px;
+    transition: 300ms;
 
     .hidden,
-    .nav-name,
-    .menu-icon {
-      display: none;
+    .nav-name {
+      display: contents;
+      margin: 0;
+      padding: 0;
     }
 
-    &:hover {
-      width: 120px;
-      transition: 300ms;
+    .nav-name {
+      margin-left: 10px;
+    }
 
-      .hidden,
-      .nav-name {
-        display: contents;
-        margin: 0;
-        padding: 0;
-      }
-
-      .nav-name {
-        margin-left: 10px;
-      }
-
-      .logo {
-        height: 110px;
-        margin-bottom: 12px;
-      }
+    .logo {
+      height: 110px;
+      margin-bottom: 12px;
     }
   }
 
   .container {
     padding-left: 125px;
-
-    .work {
-      img {
-        padding-right: 20px;
-      }
-    }
+  }
+  
+  .work img {
+    padding-right: 20px;
   }
 }
