@@ -6,9 +6,15 @@ function handleDarkMode() {
     if (isDarkMode) {
         $('.sun').css('display', 'none');
         $('.moon').css('display', 'block');
+
+        $('.lightmode-animation').css('display', 'none');
+        $('.darkmode-animation').css('display', 'block');
     } else {
         $('.sun').css('display', 'block');
         $('.moon').css('display', 'none');
+
+        $('.lightmode-animation').css('display', 'block');
+        $('.darkmode-animation').css('display', 'none');
     }
 };
 
