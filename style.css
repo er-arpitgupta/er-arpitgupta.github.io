@@ -714,10 +714,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dark .work .section-wrapper {
-  background-color: #11111f;
+  background-color: #11111f87;
 }
 
 .dark .work .section-card {
+  background-color: #1f1f1f;
   color: white;
 }
 
