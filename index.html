@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!-- BANNER -->
     <div class="banner">
         <a href="/" class="logo">
             A<span class="hidden">rpit </span>G<span class="hidden">upta</span>
@@ -24,41 +23,39 @@
 
         <div class="darkmode-parent">
             <input type="checkbox" id="darkmode" style="display: none;" />
-            <label for="darkmode" onclick="handleDarkMode()">
+            <label for="darkmode">
                 <img class="moon" src="./assets/images/moon.svg" alt="moon" style="display: none;" />
                 <img class="sun" src="./assets/images/sun.svg" alt="sun" />
             </label>
         </div>
 
         <ul class="menu">
-            <li onclick="handleNavIconClick('home')">
+            <li id="#home">
                 <img src="./assets/images/home.svg" alt="home" />
                 <span class="nav-name">Home</span>
             </li>
-            <li onclick="handleNavIconClick('about')">
+            <li id="#about">
                 <img src="./assets/images/about.svg" alt="about" />
                 <span class="nav-name">About</span>
             </li>
-            <li onclick="handleNavIconClick('skills')">
+            <li id="#skills">
                 <img src="./assets/images/skills.svg" alt="skills" />
                 <span class="nav-name">Skills</span>
             </li>
-            <li onclick="handleNavIconClick('work')">
+            <li id="#work">
                 <img src="./assets/images/work.svg" alt="work" />
                 <span class="nav-name">Work</span>
             </li>
-            <li onclick="handleNavIconClick('contact')">
+            <li id="#contact">
                 <img src="./assets/images/contact.svg" alt="contact" />
                 <span class="nav-name">Contact</span>
             </li>
         </ul>
     </div>
 
-    <!-- BODY -->
 
     <div class="container">
 
-        <!-- INTRO -->
         <div class="home" id="home">
             <div class="darkmode-animation" style="display: none;">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
@@ -114,8 +111,6 @@
             </div>
         </div>
 
-
-        <!-- ABOUT -->
         <div class="about" id="about">
             <p class="before-heading"> Some Info</p>
             <p class="heading">About Me</p>
@@ -130,8 +125,6 @@
             </div>
         </div>
 
-
-        <!-- SKILLS -->
         <div class="skills" id="skills">
             <p class="before-heading"> Check out my</p>
             <p class="heading">Skills</p>
@@ -201,92 +194,63 @@
             </div>
         </div>
 
-
-        <!-- WORK  -->
         <div class="work" id="work">
             <p class="before-heading"> Take a look at my</p>
             <p class="heading">Projects</p>
-            <div class="content">
-                <a href="/pricing-components" class="project">
-                    <img src="./assets/images/pricing.png" alt="lms" />
-                    <div class="project-content">
-                        <h3>Pricing Components</h3>
-                        <h5>
-                            Technologies:
-                            <span class="special">HTML, CSS, jQuery</span>
-                        </h5>
-                        <ul>
-                            <li>A platform for all the students to issue and request books online.</li>
-                            <li>Faculty members can add, modify, delete and track the status of the book requests.</li>
-                        </ul>
+
+            <div class="section-wrapper">
+                <a class="section-card" href="/pricing-components">
+                    <span>
+                        <img src="./assets/images/pricing.png" alt="" />
+                    </span>
+                    <div>
+                        <span>Pricing Components</span>
                     </div>
                 </a>
-                <a href="/" class="project">
-                    <img src="./assets/images/lms.png" alt="lms" />
-                    <div class="project-content">
-                        <h3>Library Management System</h3>
-                        <h5>
-                            Technologies:
-                            <span class="special">React, Spring Boot</span>
-                        </h5>
-                        <ul>
-                            <li>A platform for all the students to issue and request books online.</li>
-                            <li>Faculty members can add, modify, delete and track the status of the book requests.</li>
-                        </ul>
+
+                <a class="section-card" href="/PhotoFolio">
+                    <span>
+                        <img src="./assets/images/photofolio.png" alt="" />
+                    </span>
+                    <div>
+                        <span>PhotoFolio</span>
                     </div>
                 </a>
-                <a href="/PhotoFolio" class="project">
-                    <img src="./assets/images/photofolio.png" alt="photofolio" />
-                    <div class="project-content">
-                        <h3>PhotoFolio</h3>
-                        <h5>
-                            Technologies:
-                            <span class="special">HTML, CSS, React</span>
-                        </h5>
-                        <ul>
-                            <li>A website to showcase my photography and editing skills.</li>
-                            <li>This website is the depiction of my creativity using technology.</li>
-                        </ul>
+
+                <a class="section-card" href="/">
+                    <span>
+                        <img src="./assets/images/templates.png" alt="" />
+                    </span>
+                    <div>
+                        <span>CSS Templates</span>
                     </div>
                 </a>
-                <a href="/" class="project">
-                    <img src="./assets/images/templates.png" alt="templates" />
-                    <div class="project-content">
-                        <h3>CSS Templates</h3>
-                        <h5>
-                            Technologies:
-                            <span class="special">HTML, CSS, JS</span>
-                        </h5>
-                        <ul>
-                            <li>A place where I added my custom made various templates using HTML, CSS and JS.</li>
-                            <li>It is also an open source meaning you can find useful templates and can use on the go.
-                            </li>
-                        </ul>
+
+                <a class="section-card" href="/">
+                    <span>
+                        <img src="./assets/images/lms.png" alt="" />
+                    </span>
+                    <div>
+                        <span>Library Management System</span>
                     </div>
                 </a>
             </div>
         </div>
 
-
-        <!-- CONTACT  -->
         <div class="contact" id="contact">
             <p class="before-heading"> Say Hello</p>
             <p class="heading">Contact</p>
             <div class="content">
                 <span style="margin-bottom: 20px;">Get in touch</span>
                 <div class="links">
-                    <img key={index} src="./assets/images/gmail.svg" alt="gmail"
-                        onclick="handleContactIconClick('gmail')">
-                    <img key={index} src="./assets/images/linkedin.svg" alt="linkedin"
-                        onclick="handleContactIconClick('linkedin')">
-                    <img key={index} src="./assets/images/skills/github.svg" alt="github"
-                        onclick="handleContactIconClick('github')">
+                    <img src="./assets/images/gmail.svg" alt="gmail">
+                    <img src="./assets/images/linkedin.svg" alt="linkedin">
+                    <img src="./assets/images/skills/github.svg" alt="github">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- FOOTER  -->
     <div class="home-footer">
         &copy; Arpit Gupta,
         <script>document.write(new Date().getFullYear())</script>

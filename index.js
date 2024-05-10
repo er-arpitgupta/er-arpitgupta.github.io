@@ -1,6 +1,6 @@
 var isDarkMode = false;
 
-function handleDarkMode() {
+$('.darkmode-parent label').click(function () {
     isDarkMode = isDarkMode ? false : true;
     $(document.body).toggleClass('dark');
     if (isDarkMode) {
@@ -16,18 +16,20 @@ function handleDarkMode() {
         $('.lightmode-animation').css('display', 'block');
         $('.darkmode-animation').css('display', 'none');
     }
-};
+})
 
-function handleNavIconClick(item) {
-    $(`#${item}`)[0].scrollIntoView();
-};
+$('.banner .menu li').click(function (e) {
+    if (e.target.localName == 'li') $(e.target.id)[0].scrollIntoView();
+    else if (e.target.localName == 'img') $(`#${e.target.alt}`)[0].scrollIntoView();
+    else $(`#${e.target.innerHTML.toLowerCase()}`)[0].scrollIntoView();
+})
 
-function handleContactIconClick(item) {
+$('.contact .links img').click(function (e) {
     window.open(
-        item === 'gmail'
+        e.target.alt === 'gmail'
             ? 'mailto:er.gupta.arpit@gmail.com'
-            : item === 'linkedin'
+            : e.target.alt === 'linkedin'
                 ? 'https://www.linkedin.com/in/er-arpit-gupta'
                 : 'https://github.com/er-arpitgupta'
     )
-}
+})
