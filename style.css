@@ -557,7 +557,7 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   border: 1px solid #262631;
   border-radius: 24px;
-  background-color: white;
+  background-color: #ffffff87;
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 136px;
@@ -571,6 +571,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   color: black;
   text-decoration: none;
+  background-color: white;
 }
 
 .work .section-card::before,
