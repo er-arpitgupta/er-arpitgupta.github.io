@@ -756,6 +756,10 @@ body::-webkit-scrollbar-thumb {
     margin-top: 20px;
     text-align: center;
   }
+
+  .work .section-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 576px) {
