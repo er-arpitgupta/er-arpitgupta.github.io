@@ -482,17 +482,28 @@ body::-webkit-scrollbar-thumb {
   filter: drop-shadow(25px 5px 5px rgb(0, 0, 0));
 }
 
-.contact .content {
+.about .photo {
+  border-radius: 800px;
+  box-shadow: 5px 5px 10px 0px #0066a4;
+  margin-right: 40px;
+}
+
+.about .content {
   display: grid;
   justify-items: center;
 }
 
-.contact .links {
+.about h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.about .links {
   display: flex;
   gap: 20px;
 }
 
-.contact img {
+.about .links img {
   width: 50px;
   height: auto;
   padding: 8px;
@@ -501,7 +512,7 @@ body::-webkit-scrollbar-thumb {
   transition: 300ms;
 }
 
-.contact img:hover {
+.about .links img:hover {
   box-shadow: 1px 2px 5px 0px grey;
   transition: 300ms;
 }
@@ -647,19 +658,11 @@ body::-webkit-scrollbar-thumb {
   text-align: justify;
 }
 
-.home,
 .about,
 .skills,
-.work,
-.contact {
-  min-height: calc(100vh - 100px);
+.work {
+  min-height: 100vh;
   padding-top: 100px;
-}
-
-.home .photo {
-  border-radius: 200px;
-  box-shadow: 5px 5px 10px 0px #0066a4;
-  margin-right: 40px;
 }
 
 .box {
@@ -701,7 +704,7 @@ body::-webkit-scrollbar-thumb {
   background: #1f1f1f;
 }
 
-.dark .home,
+.dark .about,
 .dark .before-heading,
 .dark .project,
 .dark .heading,
@@ -741,36 +744,20 @@ body::-webkit-scrollbar-thumb {
     bottom: -20px !important;
   }
 
-  .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .home .photo {
-    width: 200px;
-  }
-
-  .home .home-content {
-    margin-top: 20px;
-    text-align: center;
-  }
-
   .work .section-wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) {
-  .home {
+  .about {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
 
-  .home .photo {
-    width: 300px;
+  .about .photo {
+    width: 500px;
   }
 }
 
@@ -877,6 +864,22 @@ body::-webkit-scrollbar-thumb {
     top: 0;
   }
 
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .photo {
+    width: 300px;
+  }
+
+  .about .home-content {
+    margin-top: 20px;
+    text-align: center;
+  }
+
   .project {
     display: flex;
     flex-direction: column;
@@ -885,13 +888,6 @@ body::-webkit-scrollbar-thumb {
   .project img {
     width: 90%;
   }
-
-  /* .project-content h3,
-  .project-content h5 {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  } */
 
   .content {
     padding: 20px;
