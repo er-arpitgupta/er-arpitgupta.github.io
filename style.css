@@ -663,6 +663,7 @@ body::-webkit-scrollbar-thumb {
 .work {
   min-height: 100vh;
   padding-top: 100px;
+  margin-bottom: 100px;
 }
 
 .box {
