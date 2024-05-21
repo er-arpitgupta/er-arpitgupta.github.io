@@ -2,126 +2,192 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title>Arpit Gupta | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arpit Gupta ● FE Developer</title>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="banner">
-        <a href="/" class="logo">
-            A<span class="hidden">rpit </span>G<span class="hidden">upta</span>
-        </a>
-        <input class="menu-button" type="checkbox" id="menu-button" style="display: none;" />
-        <label class="menu-icon" for="menu-button">
-            <span class="navicon"></span>
-        </label>
+    <div class="navbar">
+        <div class="nav-wrapper">
 
-        <div class="darkmode-parent">
-            <input type="checkbox" id="darkmode" style="display: none;" />
-            <label for="darkmode">
-                <img class="moon" src="./assets/images/moon.svg" alt="moon" style="display: none;" />
-                <img class="sun" src="./assets/images/sun.svg" alt="sun" />
-            </label>
+            <div class="clock">
+                <div id="time" class="time"></div>
+                <div id="date" class="date"></div>
+            </div>
+
+            <ul>
+                <li class="about">
+                    <svg class="about" fill="#9BBEC8" width="800px" height="800px" viewBox="0 0 24 24">
+                        <path class="about"
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
+                    <span class="about li-label" style="transition: 300ms ease-in-out">About</span>
+                </li>
+                <li class="skills">
+                    <svg class="skills" fill="#9BBEC8" height="800px" width="800px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 232.688 232.688" xml:space="preserve">
+                        <g id="XMLID_169_">
+                            <g id="XMLID_197_">
+                                <path class="skills" id="XMLID_221_"
+                                    d="M97.688,61.344h120c8.284,0,15-6.716,15-15s-6.716-15-15-15h-120c-8.284,0-15,6.716-15,15 S89.403,61.344,97.688,61.344z" />
+                            </g>
+                            <g id="XMLID_222_">
+                                <path class="skills" id="XMLID_223_"
+                                    d="M217.688,101.344h-120c-8.284,0-15,6.716-15,15s6.716,15,15,15h120c8.284,0,15-6.716,15-15 S225.972,101.344,217.688,101.344z" />
+                            </g>
+                            <g id="XMLID_224_">
+                                <path class="skills" id="XMLID_225_"
+                                    d="M217.688,171.344h-120c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h120c8.284,0,15-6.716,15-15 C232.688,178.06,225.972,171.344,217.688,171.344z" />
+                            </g>
+                            <g id="XMLID_226_" fill="#164863">
+                                <path class="skills" id="XMLID_227_" d="M48.785,104.408l-9.989-1.452l-4.467-9.052c-1.264-2.56-3.87-4.181-6.726-4.181
+           c-2.854,0-5.462,1.621-6.726,4.181l-4.468,9.052l-9.988,1.452c-2.825,0.41-5.173,2.389-6.055,5.104
+           c-0.882,2.715-0.146,5.695,1.897,7.688l7.228,7.045l-1.707,9.949c-0.483,2.814,0.674,5.658,2.983,7.336
+           c1.307,0.95,2.853,1.433,4.409,1.433c1.193,0,2.392-0.285,3.489-0.861l8.936-4.698l8.936,4.698
+           c1.098,0.577,2.296,0.861,3.489,0.861c0.007,0,0.015,0,0.021,0c4.142-0.001,7.499-3.358,7.499-7.5
+           c0-0.629-0.077-1.241-0.223-1.825l-1.612-9.393l7.228-7.045c2.045-1.993,2.78-4.973,1.898-7.688
+           C53.958,106.797,51.61,104.818,48.785,104.408z" />
+                            </g>
+                            <g id="XMLID_228_" fill="#164863">
+                                <path class="skills" id="XMLID_229_" d="M48.785,34.408l-9.989-1.452l-4.467-9.052c-1.264-2.56-3.87-4.181-6.726-4.181
+           c-2.854,0-5.462,1.621-6.726,4.181l-4.468,9.052l-9.988,1.452c-2.825,0.41-5.173,2.389-6.055,5.104
+           c-0.882,2.715-0.146,5.695,1.897,7.688l7.228,7.045l-1.707,9.949c-0.483,2.814,0.674,5.658,2.983,7.336
+           c1.307,0.95,2.853,1.433,4.409,1.433c1.193,0,2.392-0.285,3.489-0.861l8.936-4.698l8.936,4.698
+           c1.098,0.577,2.296,0.861,3.489,0.861c0.007,0,0.015,0,0.021,0c4.142,0,7.499-3.358,7.499-7.5c0-0.629-0.077-1.241-0.223-1.825
+           l-1.612-9.393l7.228-7.045c2.045-1.993,2.78-4.973,1.898-7.688C53.958,36.797,51.61,34.818,48.785,34.408z" />
+                            </g>
+                            <g id="XMLID_230_" fill="#164863">
+                                <path class="skills" id="XMLID_231_" d="M48.785,174.408l-9.989-1.452l-4.467-9.052c-1.264-2.56-3.87-4.181-6.726-4.181
+           c-2.854,0-5.462,1.621-6.726,4.181l-4.468,9.052l-9.988,1.452c-2.825,0.41-5.173,2.389-6.055,5.104
+           c-0.882,2.715-0.146,5.695,1.897,7.688l7.228,7.045l-1.707,9.949c-0.483,2.814,0.674,5.658,2.983,7.336
+           c1.307,0.95,2.853,1.433,4.409,1.433c1.193,0,2.392-0.285,3.489-0.861l8.936-4.698l8.936,4.698
+           c1.098,0.577,2.296,0.861,3.489,0.861c0.007,0,0.015,0,0.021,0c4.142-0.001,7.499-3.358,7.499-7.5
+           c0-0.629-0.077-1.241-0.223-1.825l-1.612-9.393l7.228-7.045c2.045-1.993,2.78-4.973,1.898-7.688
+           C53.958,176.797,51.61,174.818,48.785,174.408z" />
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="skills li-label" style="display: none"
+                        style="transition: 300ms ease-in-out">Skills</span>
+                </li>
+                <li class="work">
+                    <svg class="work" fill="#9BBEC8" width="800px" height="800px" viewBox="0 0 24 24">
+                        <path class="work" id="primary"
+                            d="M20,6H17V4a2,2,0,0,0-2-2H9A2,2,0,0,0,7,4V6H4A2,2,0,0,0,2,8V20a2,2,0,0,0,2,2H20a2,2,0,0,0,2-2V8A2,2,0,0,0,20,6ZM9,4h6V6H9Z">
+                        </path>
+                        <path class="work" id="secondary" fill="#164863"
+                            d="M21.64,6.86A2,2,0,0,0,20,6H4a2,2,0,0,0-1.64.86,1,1,0,0,0-.1,1L4,12a5,5,0,0,0,4.6,3h6.72A5,5,0,0,0,20,12l1.78-4.15A1,1,0,0,0,21.64,6.86Z">
+                        </path>
+                        <rect class="work" id="primary-2" data-name="primary" x="10" y="12" width="4" height="4" rx="1">
+                        </rect>
+                    </svg>
+                    <span class="work li-label" style="display: none" style="transition: 300ms ease-in-out">Work</span>
+                </li>
+            </ul>
+
+            <div class="darkmode">
+                <input type="checkbox" name="check" id="check" style="display: none;" />
+                <label for="check">
+                    <img src="assets/images/moon.svg" alt="moon">
+                    <img src="assets/images/sun.svg" alt="sun">
+                </label>
+            </div>
         </div>
-
-        <ul class="menu">
-            <li id="#about">
-                <img src="./assets/images/about.svg" alt="about" />
-                <span class="nav-name">About</span>
-            </li>
-            <li id="#skills">
-                <img src="./assets/images/skills.svg" alt="skills" />
-                <span class="nav-name">Skills</span>
-            </li>
-            <li id="#work">
-                <img src="./assets/images/work.svg" alt="work" />
-                <span class="nav-name">Work</span>
-            </li>
-        </ul>
     </div>
 
-
     <div class="container">
+        <div class="special-div1"></div>
+        <div class="special-div2"></div>
+        <div class="special-div3"></div>
 
-        <div class="about" id="about">
-            <div class="darkmode-animation" style="display: none;">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
-                <div class="stars"></div>
-                <div class="twinkling"></div>
-                <div class="clouds"></div>
+        <div class="about-section" id="about">
+            <div class="about-heading">
+                <h1>
+                    Hi. I'm Arpit. <img src="assets/images/star.svg" alt="star" />
+                </h1>
+                <h1>
+                    <img src="assets/images/star.svg" alt="star" /> A
+                    <u style="color: #144272; font-weight: 900">Pro</u>grammer.
+                </h1>
+            </div>
+            <div class="about-content">
+                <div class="img-wrapper">
+                    <img src="assets/images/photo.jpg" alt="photo" />
+                    <div class="links">
+                        <img src="assets/images/gmail.svg" alt="gmail" />
+                        <img src="assets/images/linkedin.svg" alt="linkedin" />
+                        <img src="assets/images/skills/github.svg" alt="github" />
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        I'm a front-end developer based in Noida, India. I have developed
+                        many types of front-ends to many well known platforms.
+                    </p>
+                    <br>
+                    <p>
+                        I'm passionate about cutting-edge, pixel-perfect, beautiful
+                        interfaces and intuitively implemented UX.
+                    </p>
+                </div>
             </div>
 
-            <img class="photo" src="./assets/images/ArpitGupta.jpg" alt="ArpitGupta" />
-            <div class="home-content">
-                <h6>Hello World! I'm</h6>
-                <h1>Arpit Gupta</h1>
-                <h4>
-                    A <u class="special">pro</u>grammer with strong foundation in
-                    front-end technologies, adept at creating innovative and efficient web
-                    solutions that deliver exceptional user experiences.
-                    <br>
-                    <br>
-                    "Crafting captivating digital experiences one line of code at a time.
-                    With a passion for frontend technologies, I blend creativity with
-                    technical prowess to breathe life into pixels. Welcome to my
-                    playground, where every click sparks innovation and every scroll
-                    unveils the artistry of UI development."
-                </h4>
-                <br>
-                <div class="links">
-                    <img src="./assets/images/gmail.svg" alt="gmail">
-                    <img src="./assets/images/linkedin.svg" alt="linkedin">
-                    <img src="./assets/images/skills/github.svg" alt="github">
-                </div>
-            </div>
-            <div class="lightmode-animation">
-                <div id="background-wrap">
-                    <div class="x1">
-                        <div class="cloud"></div>
-                    </div>
-                    <div class="x2">
-                        <div class="cloud"></div>
-                    </div>
-                    <div class="x3">
-                        <div class="cloud"></div>
-                    </div>
-                    <div class="x4">
-                        <div class="cloud"></div>
-                    </div>
-                    <div class="x5">
-                        <div class="cloud"></div>
-                    </div>
-                </div>
+            <p>
+                "Crafting captivating digital experiences one line of code at a time.
+                With a passion for frontend technologies, I blend creativity with
+                technical prowess to breathe life into pixels. Welcome to my
+                playground, where every click sparks innovation and every scroll
+                unveils the artistry of UI development."
+            </p>
 
-                <div class="sun">
-                    <div class="ray_box">
-                        <div class="ray ray1"></div>
-                        <div class="ray ray2"></div>
-                        <div class="ray ray3"></div>
-                        <div class="ray ray4"></div>
-                        <div class="ray ray5"></div>
-                        <div class="ray ray6"></div>
-                        <div class="ray ray7"></div>
-                        <div class="ray ray8"></div>
-                        <div class="ray ray9"></div>
-                        <div class="ray ray10"></div>
+            <div class="bg">
+                <div class="path">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="bg-desc">
+                    <div>
+                        <img src="assets/images/aktu.png" alt="aktu" />
+                        <div>
+                            <span>B. Tech CSE</span>
+                            <span class="duration">(<span class="start1">Jul/2016</span> -
+                                <span class="end1">Sep/2020</span>) ●
+                                <span class="calc1"></span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/tcs.png" alt="aktu" />
+                        <div>
+                            <span>Software Engineer</span>
+                            <span class="duration">(<span class="start2">Nov/2020</span> -
+                                <span class="end2">Feb/ 2024</span>) ●
+                                <span class="calc2"></span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/ey.svg" alt="aktu" />
+                        <div>
+                            <span>Senior Software Engineer</span>
+                            <span class="duration">( <span class="start3">Feb/2024</span> -
+                                <span class="end3">Present</span>) ●
+                                <span class="calc3"></span></span><span class="calc"></span>
+                        </div>
                     </div>
                 </div>
-                <img class="mountain" src="assets/images/mountain.png" alt="mountain">
             </div>
         </div>
 
-        <div class="skills" id="skills">
-            <p class="before-heading"> Check out my</p>
-            <p class="heading">Skills</p>
-            <div class="content">
+        <div class="skills-section" id="skills">
+            <div>
                 <div class="skill-set">
-                    <span class="title">Skills</span>
+                    <span class="title">Skills <img src="assets/images/star.svg" alt="star" /><img
+                            src="assets/images/star.svg" alt="star" /></span>
                     <div class="skill-logos">
                         <div class="box">
                             <img src="./assets/images/skills/html.svg" alt="html" />
@@ -158,7 +224,9 @@
                     </div>
                 </div>
                 <div class="tools">
-                    <span class="title">Tools</span>
+                    <span class="title">Tools <img src="assets/images/star.svg" alt="star" /><img
+                            src="assets/images/star.svg" alt="star" />
+                    </span>
                     <div class="tools-logos">
                         <div class="box">
                             <img src="./assets/images/skills/vscode.svg" alt="vscode" />
@@ -167,6 +235,14 @@
                         <div class="box">
                             <img src="./assets/images/skills/github.svg" alt="github" />
                             <span>GitHub</span>
+                        </div>
+                        <div class="box">
+                            <img src="./assets/images/skills/ado.png" alt="ado" />
+                            <span>ADO</span>
+                        </div>
+                        <div class="box">
+                            <img src="./assets/images/skills/figma.png" alt="figma" />
+                            <span>Figma</span>
                         </div>
                         <div class="box">
                             <img src="./assets/images/skills/postman.svg" alt="postman" />
@@ -185,59 +261,83 @@
             </div>
         </div>
 
-        <div class="work" id="work">
-            <p class="before-heading"> Take a look at my</p>
-            <p class="heading">Projects</p>
+        <div class="work-section" id="work">
+            <a class="project" href="/pricing-component" style="grid-column: span 2">
+                <div>
+                    <img src="assets/images/star.svg" alt="star" /><img src="assets/images/star.svg" alt="star" />
+                    <span>Pricing Components</span>
+                    <img src="assets/images/arrow.svg" alt="arrow" />
+                </div>
+                <img src="./assets/images/pricing.png" alt="" />
+            </a>
 
-            <div class="section-wrapper">
-                <a class="section-card" href="/pricing-component">
-                    <span>
-                        <img src="./assets/images/pricing.png" alt="" />
-                    </span>
-                    <div>
-                        <span>Pricing Components</span>
-                    </div>
-                </a>
+            <a class="project" href="/photofolio">
+                <div>
+                    <img src="assets/images/star.svg" alt="star" /><img src="assets/images/star.svg" alt="star" />
+                    <span>PhotoFolio</span>
+                    <img src="assets/images/arrow.svg" alt="arrow" />
+                </div>
+                <img src="./assets/images/photofolio.png" alt="" />
+            </a>
 
-                <a class="section-card" href="/photofolio">
-                    <span>
-                        <img src="./assets/images/photofolio.png" alt="" />
-                    </span>
-                    <div>
-                        <span>PhotoFolio</span>
-                    </div>
-                </a>
+            <a class="project" href="/">
+                <div>
+                    <img src="assets/images/star.svg" alt="star" /><img src="assets/images/star.svg" alt="star" />
+                    <span>CSS Templates</span>
+                    <img src="assets/images/arrow.svg" alt="arrow" />
+                </div>
+                <img src="./assets/images/templates.png" alt="" />
+            </a>
 
-                <a class="section-card" href="/">
-                    <span>
-                        <img src="./assets/images/templates.png" alt="" />
-                    </span>
-                    <div>
-                        <span>CSS Templates</span>
-                    </div>
-                </a>
+            <a class="project" href="/" style="grid-column: span 2">
+                <div>
+                    <img src="assets/images/star.svg" alt="star" /><img src="assets/images/star.svg" alt="star" />
+                    <span>Library Management System</span>
+                    <img src="assets/images/arrow.svg" alt="arrow" />
+                </div>
+                <img src="./assets/images/lms.png" alt="" />
+            </a>
+        </div>
+    </div>
 
-                <a class="section-card" href="/">
-                    <span>
-                        <img src="./assets/images/lms.png" alt="" />
-                    </span>
-                    <div>
-                        <span>Library Management System</span>
-                    </div>
-                </a>
+    <footer>
+        <div class="links">
+            <img src="assets/images/gmail.svg" alt="gmail" />
+            <img src="assets/images/linkedin.svg" alt="linkedin" />
+            <img src="assets/images/skills/github.svg" alt="github" />
+        </div>
+        <div class="branding">
+            <img src="assets/images/logo.png" alt="logo">
+            <div>
+                <div>&copy; Arpit Gupta, <span class="curr_yr"></span>. &nbsp;</div>
+                <div>All rights reserved.</div>
             </div>
         </div>
 
-    </div>
+        <div class="waveform-container">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </footer>
 
-    <div class="home-footer">
-        &copy; Arpit Gupta,
-        <script>document.write(new Date().getFullYear())</script>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
 </body>
