@@ -526,6 +526,12 @@ footer img {
   }
 }
 
+@media (max-width: 450px) {
+  .clock {
+    display: none;
+  }
+}
+
 .waveform-container {
   display: flex;
   justify-content: space-between;
