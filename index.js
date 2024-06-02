@@ -39,7 +39,8 @@ $(".links img").click(function (e) {
             ? "mailto:er.gupta.arpit@gmail.com"
             : e.target.alt === "linkedin"
                 ? "https://www.linkedin.com/in/er-arpit-gupta"
-                : "https://github.com/er-arpitgupta"
+                : e.target.alt === 'github' ? "https://github.com/er-arpitgupta"
+                    : "https://codepen.io/er-arpitgupta"
     );
 });
 

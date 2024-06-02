@@ -711,5 +711,5 @@ footer img {
 .dark .bg-desc > div:active,
 .dark .box:active {
   box-shadow: 4px 4px 10px #000000, -4px -4px 10px #ffffff3b,
-    4px 4px 10px 0 #000000 inset, -4px -4px 15px #ffffff4a inset;
+    4px 4px 10px 0 #000000 inset, -4px -4px 15px #ffffff4a inset !important;
 }
