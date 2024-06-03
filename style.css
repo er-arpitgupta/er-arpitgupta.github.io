@@ -130,12 +130,8 @@ body {
 
 .container {
   margin: 0 100px 100px;
-}
-
-.about-section,
-.skills-section,
-.work-section {
-  padding-top: 150px !important;
+  display: grid;
+  gap: 200px;
 }
 
 .special-div1,
@@ -302,6 +298,14 @@ body {
   height: 70px;
 }
 
+.bg-desc .ey-dark {
+  display: block;
+}
+
+.bg-desc .ey-light {
+  display: none;
+}
+
 .bg-desc div > span:nth-child(1) {
   margin: 5px 0 0;
   color: #144272;
@@ -318,7 +322,7 @@ body {
   color: grey;
 }
 
-.skills-section > div {
+.skills-section {
   display: grid;
   gap: 20px;
   padding: 30px;
@@ -345,20 +349,88 @@ body {
   top: -20px;
 }
 
-.skill-logos,
-.tools-logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .tools {
   margin-top: 40px;
 }
 
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -1500px;
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    left: 1500px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.skill-logos,
+.tools-logos {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.primary,
+.secondary {
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.primary {
+  left: 0;
+  animation: scroll 10s linear infinite;
+}
+
+.secondary {
+  left: 1500px;
+  animation: scroll2 10s linear infinite;
+}
+
+.primary:hover,
+.primary:hover ~ .secondary {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.secondary:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.skill-logos:hover > .primary:not(:hover),
+.tools-logos:hover > .primary:not(:hover) {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
 .box {
-  flex: 1 90px;
-  height: 75px;
+  position: relative;
+  min-width: 120px;
+  min-height: 80px;
+  width: 120px;
+  height: 80px;
   padding: 10px;
   display: grid;
   align-content: space-between;
@@ -369,9 +441,7 @@ body {
 }
 
 .box img {
-  width: 30px;
-  height: auto;
-  max-height: 40px;
+  width: 40px;
 }
 
 .work-section {
@@ -712,4 +782,12 @@ footer img {
 .dark .box:active {
   box-shadow: 4px 4px 10px #000000, -4px -4px 10px #ffffff3b,
     4px 4px 10px 0 #000000 inset, -4px -4px 15px #ffffff4a inset !important;
+}
+
+.dark .bg-desc .ey-dark {
+  display: none;
+}
+
+.dark .bg-desc .ey-light {
+  display: block;
 }
