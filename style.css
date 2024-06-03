@@ -605,6 +605,10 @@ footer img {
   .links {
     gap: 20px;
   }
+
+  .links img {
+    width: 20px;
+  }
 }
 
 .waveform-container {
