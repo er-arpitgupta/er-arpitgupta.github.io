@@ -130,7 +130,8 @@ body {
 
 .container {
   margin: 0 100px 100px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 200px;
 }
 
@@ -599,6 +600,10 @@ footer img {
 @media (max-width: 450px) {
   .clock {
     display: none;
+  }
+
+  .links {
+    gap: 20px;
   }
 }
 
