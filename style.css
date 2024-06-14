@@ -441,10 +441,8 @@ body {
   box-shadow: 4px 4px 10px #00000050, -4px -4px 15px #ffffffcf;
 }
 
-.rating {
-  img {
-    width: 20px;
-  }
+.rating img {
+  width: 20px;
 }
 
 .box > img {
