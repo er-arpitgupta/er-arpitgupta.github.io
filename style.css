@@ -129,7 +129,7 @@ body {
 }
 
 .container {
-  margin: 0 100px 100px;
+  margin: 200px 100px 100px;
   display: flex;
   flex-direction: column;
   gap: 200px;
@@ -429,9 +429,9 @@ body {
 .box {
   position: relative;
   min-width: 120px;
-  min-height: 80px;
+  min-height: 100px;
   width: 120px;
-  height: 80px;
+  height: 100px;
   padding: 10px;
   display: grid;
   align-content: space-between;
@@ -441,7 +441,13 @@ body {
   box-shadow: 4px 4px 10px #00000050, -4px -4px 15px #ffffffcf;
 }
 
-.box img {
+.rating {
+  img {
+    width: 20px;
+  }
+}
+
+.box > img {
   width: 40px;
 }
 
@@ -542,7 +548,7 @@ footer img {
 
 @media (max-width: 991.9px) {
   .container {
-    margin: 0 50px 100px;
+    margin: 150px 50px 100px;
   }
 
   .about-content {
@@ -560,6 +566,10 @@ footer img {
 }
 
 @media (max-width: 764px) {
+  .about-heading img {
+    width: 30px;
+  }
+
   .work-section {
     display: flex;
     gap: 30px;
@@ -570,7 +580,7 @@ footer img {
 @media (max-width: 576px) {
   .container {
     width: 90%;
-    margin: 0 5% 100px;
+    margin: 150px 5% 100px;
   }
 
   .about-content,
@@ -608,6 +618,10 @@ footer img {
 
   .links img {
     width: 20px;
+  }
+
+  .about-heading {
+    font-size: 5vw !important;
   }
 }
 
