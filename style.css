@@ -167,7 +167,12 @@ body {
 .about-section .about-heading {
   font-size: 4vw;
   text-align: center;
-  color: #427d9d;
+  background: -webkit-linear-gradient(52deg, #144272 30%, #53fbb5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-text-stroke: 15px transparent;
+  color: #9bbec8; */
   display: grid;
   z-index: 1;
 }
