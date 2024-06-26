@@ -27,7 +27,7 @@ $(".navbar ul li").click(function (e) {
     $(`.navbar ul li.${e.target.classList.value.split(' ')[0]} span`).css('display', 'block');
     $("html, body").animate(
         {
-            scrollTop: $(`.container #${e.target.classList.value.split(' ')[0]}`).offset().top,
+            scrollTop: $(`.container #${e.target.classList.value.split(' ')[0]}`).offset().top - 150,
         },
         "slow"
     );
@@ -102,7 +102,7 @@ $(window).scroll(function () {
     });
 
     for (let i = 0; i < allNavLi.length; i++) {
-        if ($(window).scrollTop() >= $(`#${allNavLi[i]}`).offset().top) {
+        if ($(window).scrollTop() >= $(`#${allNavLi[i]}`).offset().top - 500) {
             $('.navbar ul li span').css('display', 'none');
             $(`.navbar ul li.${allNavLi[i]} span`).css('display', 'block');
         }
