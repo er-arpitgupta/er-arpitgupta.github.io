@@ -501,7 +501,7 @@ body {
   position: relative;
   top: 0;
   width: 100%;
-  height: 350px;
+  height: 25vw;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 30px;
@@ -562,10 +562,6 @@ footer img {
   .project {
     font-size: 20px;
   }
-
-  .project > img {
-    height: 200px !important;
-  }
 }
 
 @media (max-width: 764px) {
@@ -577,6 +573,10 @@ footer img {
     display: flex;
     gap: 30px;
     flex-direction: column;
+
+    > a >img {
+      height: 35vw !important;
+    }
   }
 }
 
