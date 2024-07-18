@@ -36,12 +36,12 @@ body {
   margin-top: 2px;
 }
 
-.navbar {
+nav {
   display: flex;
   justify-content: center;
 }
 
-.navbar .nav-wrapper {
+nav .nav-wrapper {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -55,14 +55,14 @@ body {
   z-index: 99;
 }
 
-.navbar ul {
+nav ul {
   display: flex;
   gap: 20px;
   list-style-type: none;
   padding: 0;
 }
 
-.navbar ul li {
+nav ul li {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -79,16 +79,16 @@ body {
   outline: none;
 }
 
-.navbar ul li svg {
+nav ul li svg {
   width: 20px;
   height: 20px;
 }
 
-.navbar ul li:active svg {
+nav ul li:active svg {
   fill: #fff;
 }
 
-.navbar ul li .li-label {
+nav ul li .li-label {
   transition: 1000ms ease-in-out;
 }
 
@@ -782,7 +782,7 @@ footer img {
   }
 }
 
-.navbar ul li:active,
+nav ul li:active,
 .links img:active,
 .bg-desc > div:active,
 .box:active {
@@ -842,7 +842,7 @@ footer img {
   box-shadow: 4px 4px 10px 0 #000000 inset, -4px -4px 15px #ffffff2e inset;
 }
 
-.dark .navbar ul li:active,
+.dark nav ul li:active,
 .dark .links img:active,
 .dark .bg-desc > div:active,
 .dark .box:active {
