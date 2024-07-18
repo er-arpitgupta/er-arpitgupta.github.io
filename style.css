@@ -111,6 +111,31 @@ body {
   box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3), -4px -4px 5px #ffffff40;
 }
 
+.darkmode label::after {
+  content: "Dark Mode";
+  opacity: 0;
+  width: max-content;
+  color: #98c9e4;
+  font-size: 14px;
+  position: absolute;
+  top: 55px;
+  background-color: #427d9d;
+  padding: 5px 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  transition: 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.dark .darkmode label::after {
+  content: "Light Mode";
+  background-color: #1b4257;
+}
+
+.darkmode label:hover::after {
+  opacity: 1;
+}
+
 .darkmode label img {
   width: 25px;
   height: 25px;
@@ -134,7 +159,7 @@ body {
 }
 
 .container {
-  margin: 0 100px;
+  margin: 150px 100px;
   display: flex;
   flex-direction: column;
   gap: 150px;
@@ -189,12 +214,7 @@ body {
 
 .about-section .about-heading .special {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(
-    0.2turn,
-    rgba(255, 0, 128),
-    #144272,
-    #53fbb5
-  );
+  border-image: linear-gradient(0.2turn, rgba(255, 0, 128), #144272, #53fbb5);
   border-image-slice: 1;
 }
 
@@ -397,6 +417,7 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
+  margin: 0 -30px;
 }
 
 .primary,
