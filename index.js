@@ -11,8 +11,7 @@ function updateClock() {
       month: "short",
       day: "numeric",
     });
-  (document.getElementById("time").textContent = l),
-    (document.getElementById("date").textContent = o);
+  $(".time").text(l), $(".date").text(o);
 }
 function calculateMonths(t, e) {
   const a = {
