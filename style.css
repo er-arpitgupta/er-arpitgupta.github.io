@@ -6,7 +6,6 @@
 :root {
   --bg-color: #b4cdd5;
   --fg-color: #103960;
-  --fg-sec-color: #98c9e4;
   --dark-bg-color: #041829;
   --dark-fg-color: #77aac5;
 }
@@ -55,7 +54,7 @@ nav {
   background-color: #427d9d7d;
   padding: 10px;
   border-radius: 100px;
-  border: 2px solid var(--fg-sec-color);
+  border: 2px solid var(--bg-color);
   z-index: 1;
 }
 
@@ -72,8 +71,9 @@ nav ul li {
   gap: 10px;
   width: fit-content;
   height: 40px;
-  color: var(--fg-sec-color);
-  background-color: #427d9d;
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+  /* background-color: #427d9d; */
   padding: 9px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50px;
@@ -82,7 +82,7 @@ nav ul li {
   outline: none;
 }
 
-nav ul li svg {
+nav ul li img {
   width: 20px;
   height: 20px;
 }
@@ -104,7 +104,8 @@ nav ul li .li-label {
   padding: 4px;
   border-radius: 50px;
   cursor: pointer;
-  background-color: #427d9d;
+  background-color: var(--fg-color);
+  /* background-color: #427d9d; */
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -112,7 +113,7 @@ nav ul li .li-label {
   content: "Dark Mode";
   opacity: 0;
   width: max-content;
-  color: var(--fg-sec-color);
+  color: var(--bg-color);
   font-size: 14px;
   position: absolute;
   top: 55px;
@@ -308,7 +309,6 @@ main {
 }
 
 .bg-desc {
-  font-size: 25px;
   margin-left: 30px;
   display: flex;
   flex-direction: column;
@@ -342,6 +342,10 @@ main {
   padding-left: 20px;
   margin-left: 20px;
   border-left: 2px dotted var(--fg-color);
+}
+
+.bg-desc div div h2 {
+  font-size: 25px;
 }
 
 .bg-desc .duration {
