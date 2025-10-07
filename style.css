@@ -9,7 +9,7 @@
   --bg-color: #b4cdd5;
   --fg-color: #103960;
   --dark-bg-color: #062b4a;
-  --dark-fg-color: #77aac5;
+  --dark-fg-color: #e8fdff;
 }
 
 html {
@@ -618,6 +618,10 @@ footer img {
   .about-heading {
     flex-direction: column;
     justify-content: center;
+    background: -webkit-linear-gradient(232deg, var(--fg-color) 30%, #53fbb5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .img-wrapper {
