@@ -33,10 +33,7 @@ function calculateMonths(element) {
   const monDiff = (monthsDifference % 12) + 1;
 
   $(element).text(
-    $(element).text() +
-      (yrDiff > 0 ? yrDiff + " yrs" : "") +
-      " " +
-      (monDiff && monDiff + " months")
+    $(element).text() + (yrDiff > 0 ? yrDiff + " yrs" : "") + " " + (monDiff && monDiff + " months")
   );
 }
 
@@ -54,15 +51,10 @@ $(document).ready(function () {
 
   $("nav ul li").click(function (e) {
     $("nav ul li span").css("display", "none");
-    $(`nav ul li.${e.target.classList.value.split(" ")[0]} span`).css(
-      "display",
-      "block"
-    );
+    $(`nav ul li.${e.target.classList.value.split(" ")[0]} span`).css("display", "block");
     $("html, body").animate(
       {
-        scrollTop:
-          $(`.container #${e.target.classList.value.split(" ")[0]}`).offset()
-            .top - 150,
+        scrollTop: $(`.container #${e.target.classList.value.split(" ")[0]}`).offset().top - 150,
       },
       "slow"
     );
